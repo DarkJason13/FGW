@@ -1,0 +1,40 @@
+.uxfwk-fgw-wifi-statistics                                                { position: relative; height: 100%; padding: 10px; border-top: 1px solid #dddddd; }
+.uxfwk-fgw-wifi-statistics .table-area                                    { position: relative; height: 100%; width: 100%; min-height: 400px; overflow: hidden; }
+.uxfwk-fgw-wifi-statistics table                                          { table-layout: fixed; border-top: none; }
+.uxfwk-fgw-wifi-statistics .table-head                                    { -position: absolute; top: 0px; -height: 222px; width: 100%; overflow: hidden; }
+.uxfwk-fgw-wifi-statistics .table-head.collapsed                          { -height: 94px; }
+.uxfwk-fgw-wifi-statistics .table-head.expanded                           { -height: 250px; }
+.uxfwk-fgw-wifi-statistics .table-body                                    { -height: 100%; -padding-top: 93px; }
+.uxfwk-fgw-wifi-statistics .table-body.collapsed                          { -padding-top: 93px; }
+.uxfwk-fgw-wifi-statistics .table-body.collapsed.counters-has-errors      { -padding-top: 153px; }
+.uxfwk-fgw-wifi-statistics .table-body.expanded.counters-has-errors       { -padding-top: 250px; }
+.uxfwk-fgw-wifi-statistics .table-body.expanded                           { -padding-top: 190px; }
+.uxfwk-fgw-wifi-statistics .table-body.counters-has-errors                { -padding-top: 153px; }
+.uxfwk-fgw-wifi-statistics .table-body > div                              { height: 100%; overflow: auto; }
+.uxfwk-fgw-wifi-statistics .table-search-content                          { height: 92px; overflow: hidden; }
+.uxfwk-fgw-wifi-statistics .table-body table                              { }
+
+.uxfwk-fgw-wifi-statistics .col-if                                     { width: 150px; }
+.uxfwk-fgw-wifi-statistics .col-rx                                     { width: 250px; }
+.uxfwk-fgw-wifi-statistics .col-tx                                     { width: 250px; }
+.uxfwk-fgw-wifi-statistics .col-elem                                     { width: 250px; }
+
+.uxfwk-fgw-wifi-statistics .table-wrapper.header                          { padding-right: 20px; border-top: 3px solid #FBBA30; background-color: #EBEBEB; }
+
+.uxfwk-fgw-wifi-statistics .table-messages                                { height: 0px; overflow: hidden; }
+
+.uxfwk-fgw-wifi-statistics.warning-message .table-messages                { height: 43px; }
+.uxfwk-fgw-wifi-statistics.warning-message .table-head                    { height: 234px; }
+.uxfwk-fgw-wifi-statistics.warning-message .table-body                    { padding-top: 234px; }
+
+
+
+
+.uxfwk-fgw-wifi-statistics .radio-service-type                                    {display: inline; margin-left: 20px; }
+
+.uxfwk-fgw-wifi-statistics .table-message.expanded {
+    height: 60px;
+}
+
+
+.ng-dirty.ng-invalid > a.select2-choice { border: none; }

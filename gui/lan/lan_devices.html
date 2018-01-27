@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html style="background-color:#424041" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ng-scope"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge; text/html;">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+      <!--base href="1.0.0-r999/"--><!--base href="${prefix.revision}/"-->
+		<title>FGW</title>
+		<link type="image/x-icon" rel="icon" href="http://192.168.1.254/shared/fuxi-agorang/css/images/favicon.ico">
+      <link type="text/css" rel="stylesheet" href="lan_devices_ficheiros/pack.css">
+      <link type="text/css" rel="stylesheet" href="lan_devices_ficheiros/bootstrap.css">
+      <link type="text/css" rel="stylesheet" href="lan_devices_ficheiros/ui-bootstrap-csp.css">
+      <!--link type="text/css" rel="stylesheet" href="external/styles/select2.css"/-->
+      <link type="text/css" rel="stylesheet" href="lan_devices_ficheiros/fgwicons.css">
+      <link type="text/css" rel="stylesheet" href="lan_devices_ficheiros/app.css">
+      <link type="text/css" rel="stylesheet" href="lan_devices_ficheiros/fgw-toggle.css">
+      <link type="text/css" rel="stylesheet" href="lan_devices_ficheiros/index.css">
+
+      <!--link type="text/css" rel="stylesheet" href="basepack/pack.bootstrap.min.css"/>
+      <link type="text/css" rel="stylesheet" href="external/datatables-1.9/css/jquery.dataTables.css"/>
+      <link type="text/css" rel="stylesheet" href="shared/uxfwk-table/css/uxfwk.table.css"/>
+      <link type="text/css" rel="stylesheet" href="index.css"/-->
+      <!--link type="text/css" rel="stylesheet" href="custom/styles.css"/-->
+      <link rel="stylesheet" crossorigin="anonymous" href="lan_devices_ficheiros/main.css"><script type="text/javascript" src="lan_devices_ficheiros/bootstrap.js"></script>
+      <script type="text/javascript" src="lan_devices_ficheiros/bootstrap-show-password.js"></script>
+      <script type="text/javascript" src="lan_devices_ficheiros/require.js" data-main="require.config.js"></script>
+	<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="require.config" src="lan_devices_ficheiros/require_002.js"></script><style type="text/css" nonce="E059060FBC26984D89174648D2E3E366">#AD_Top,#AD_banner,#AdColumn,#AdContainer,#AdHeader,#AdImage,#Adcode,#AdvertiseFrame,#Advertisements,#BottomAdContainer,#BottomAds,#ContentAd,#PreRollAd,#RightAdBlock,#TopAd,#WNAd41,#ad-area,#ad-background,#ad-bg,#ad-bottom,#ad-container,#ad-header,#ad-header-728x90,#ad-leaderboard,#ad-main,#ad-panel,#ad-right,#ad-rotator,#ad-text,#ad-top,#ad-top-banner-placeholder,#ad-top-wrapper,#ad-unit,#ad-wrapper,#ad468,#ad728,#ad728x90,#adBanner,#adBelt,#adComponentWrapper,#adDiv,#adFrame,#adGallery,#adHeader,#adHolder,#adLayer,#adLeader,#adPosition0,#adText,#ad_1,#ad_2,#ad_3,#ad_4,#ad_5,#ad_728_90,#ad_area,#ad_banner,#ad_center,#ad_content,#ad_header,#ad_leaderboard,#ad_main,#ad_overlay,#ad_space,#ad_square,#ad_table,#ad_topslot,#ad_unit,#ad_wrap,#ad_wrapper,#adaptv_ad_player_div,#adbackground,#adbanner,#adbar,#adblock,#adboard,#adbody,#adbox,#adcode,#adcontainer,#adcontainer1,#adcontent,#adhead,#adheader,#adimg1,#adlayer,#adnews,#adposition3,#adright,#ads-col,#ads-wrapper,#ads1,#adsHeader,#adsIframe,#ads_bottom,#ads_right,#ads_top,#ads_wrapper,#adsdiv,#adsense,#adsense_block,#adsense_inline,#adsensewide,#adspace,#adspace_top,#adspot-300x250-pos-1,#adspot-300x250-pos-2,#adstop,#adtext,#adtop,#adv-masthead,#adv-top,#advert1,#advert2,#advertContainer,#advert_box,#advertise,#advertisement1,#advertisetop,#advertising_wrapper,#adverts,#advtop,#adwrapper,#banner-ad,#bannerAd,#bannerAdWrapper,#banner_topad,#bannerad,#bigAd,#bigad,#body_ad,#bottomAd,#bottomAds,#bottom_ad,#centerads,#cmn_ad_tag_head,#companionAd,#content-header-ad,#contentAd,#content_ads,#content_adv,#contentad,#ctlDisplayAd1_lblAd,#dart-container-728x90,#dfp_ad_Entry_728x90,#dfp_ad_Home_728x90,#divAd,#div_prerollAd_1,#download_ad,#featuread,#featured-ads,#featuredAds,#footer_ad,#footer_ads,#game-ad,#googlead,#gridAdSidebar,#head-ad,#header-ads,#headerAd,#headerAdContainer,#header_ad,#homead,#ka_adRightSkyscraperWide,#leaderAd,#leaderBoardAd,#leaderboard-ad,#leaderboard-advertisement,#leaderboardad,#left-ad,#left_ads,#leftad,#leftads,#logoAd,#logo_ad,#mainAd,#main_ad,#mpu2,#mpu2_container,#mpu_container,#msad,#my-adsFPAD,#myAd,#player_ads,#pre_advertising_wrapper,#prerollAd,#promo-ad,#publicidad,#reklama,#rh-ad,#right_ads,#right_adsense,#search-sponsor,#searchAd,#search_ads,#sideAd,#side_ads,#sidebar-ads,#sidebar_ad,#sidebar_ads,#skybox-ad,#sponsorAdDiv,#sponsorText,#sponsoredwellcontainerbottom,#sponsors-home,#takeover_ad,#text-ads,#theAd,#top-ad,#top-ad-content,#topAd,#topAdSpace,#topAdSpace_div,#topAdvert,#topBannerAd,#top_ad,#top_ads,#topad,#topadvert,#topbannerad,#under_story_ad,#videoAd,#videoads,.ADBAR,.AdBar,.AdBody:not(body),.AdBox,.AdInfo,.AdSidebar,.AdTitle,.AdvertContainer,.HomeAds,.IM_ad_unit,.LazyLoadAd,.RelatedAds,.SponsoredContent,.ad-300x250,.ad-970,.ad-banner,.ad-block,.ad-body,.ad-border,.ad-btn,.ad-button,.ad-cat,.ad-cell,.ad-display,.ad-enabled,.ad-header,.ad-holder,.ad-img,.ad-inner,.ad-item,.ad-leader-top,.ad-leaderboard,.ad-left,.ad-link,.ad-links,.ad-loaded,.ad-panel,.ad-placement,.ad-rail,.ad-right,.ad-row,.ad-scroll,.ad-section,.ad-served,.ad-sidebar,.ad-source,.ad-square,.ad-stack,.ad-text,.ad-top,.ad-unit,.ad-unit-300-wrapper,.ad-vertical-container,.ad-wide,.ad-wrap,.ad-wrapper,.ad300,.ad468,.ad728,.ad90,.adBar,.adBlock,.adBottomBoard,.adBox,.adChoicesLogo,.adContent,.adDiv,.adElement,.adFrame,.adFrameCnt,.adHead,.adHeader,.adHeaderblack,.adHeadline,.adHolder,.adHoldert,.adImg,.adItem,.adLink,.adMessage,.adMiddle,.adMod,.adModule,.adOverlay,.adPanel,.adPod,.adResult,.adRight,.adRotator,.adSpace,.adSpot,.adText,.adTitle,.adTopHome,.adWidget,.adWrap,.ad_1,.ad_160,.ad_160x600,.ad_2,.ad_3,.ad_728x90,.ad_960,.ad_Right,.ad_block,.ad_body,.ad_bottom,.ad_container,.ad_description,.ad_global_header,.ad_head_rectangle,.ad_header,.ad_img,.ad_item,.ad_leaderboard,.ad_middle,.ad_outer,.ad_promo,.ad_slug_table,.ad_space,.ad_spot,.ad_text,.ad_title,.ad_trick_header,.ad_trick_left,.ad_wrap,.ad_wrapper,.adarea,.adbanner,.adbar,.adbottom,.adbutton,.adcolumn,.adcont,.addiv,.adframe,.adfree,.adheader,.adholder,.adinfo,.adkit,.adlink,.adlist,.admain,.admiddle,.adright,.adrow1,.adrow2,.ads-1,.ads-2,.ads-3,.ads-300-250,.ads-area,.ads-bg,.ads-col,.ads-header,.ads-holder,.ads-inline,.ads-item,.ads-right,.ads-section,.ads-title,.ads-top,.ads1,.adsBlock,.adsWidget,.ads_catDiv,.ads_div,.ads_top,.ads_wrapper,.adsbottombox,.adsbox,.adsbygoogle,.adscontainer,.adshome,.adside,.adslot,.adslot_blurred,.adspace,.adtable,.adtile,.adtop,.adv300,.adv_300,.adv_txt,.advert-block,.advert-box,.advert-container,.advert-content,.advert-horizontal,.advert-wrapper,.advert2,.advertColumn,.advertContainer,.advertLink,.advertText,.advert_area,.advert_container,.advert_list,.advertbox,.advertisement-1,.advertisement-block,.advertiser,.advertising_banner,.advertising_block,.advertisment,.advertorial,.adverts,.adverttext,.adwords,.afs_ads,.after-post-ad,.article-advert,.article_ad,.b-advert,.b-banner,.banner-ad,.banner-ads,.banner160x600,.banner300,.bannerAd,.banner_728x90,.banner_ad,.bannerad,.block-ad,.block-ec_ads,.block-simpleads,.blog-ads,.bottom-ad,.bottom-ads,.bottom-left-ad,.bottomAds,.bottom_ad_block,.box-ads,.box-radvert,.box-recommend-ad,.box_ads,.box_adv,.boxad,.boxadv,.btn-ad,.can_ad_slug,.category-ad,.change_AdContainer,.chitikaAdBlock,.commerce-inset,.container_ad,.container_row_ad,.contentAd,.contentAds,.content_ads,.content_tagsAdTech,.cp-adsInited,.custom-ad,.desktop-ad,.dfp-ad,.dfp-ad-unit,.dfp-tag-wrapper,.displayAd,.download_ad,.easyazon-block,.ec-ads-remove-if-empty,.featured-ad,.featuredAdBox,.flash-advertisement,.footer-ad,.footer-ads,.footer_ad,.footerad,.forumAd,.gallery-ad,.google-sponsored,.googleAdSense,.googleAds,.greyAd,.has-ad,.hasads,.header-ad,.headerAd,.header_ad,.header_ad_center,.header_advert,.headerad,.headerads,.home-ad,.home-ads,.homeAd,.homead,.homepage-ad,.homepage_ads,.horizontal_ad,.img_ad,.imgad,.inner_ad,.innerad,.insert-post-ads,.interstitial_ad_wrapper,.ipsAd,.item-ads,.item-container-ad,.js-springs__top,.js-sticky-ad,.leaderboard-ad,.leaderboard-ads,.leftAd,.leftad,.list-ad,.list-ads,.listad,.logo-ad,.marketing-ad,.mid_ad,.middle_AD,.mod-adopenx,.module-ad,.nav-ad,.newsAd,.node-ad,.oasad,.oio-banner-zone,.openx,.overlay-ads,.page-ad,.page_ad,.plainAd,.playerAd,.player_ad,.player_hover_ad,.pm-ad,.post-ad,.post-sponsored,.post_ad,.postad,.premiumAdOverlay,.premiumAdOverlayClose,.promoAd,.promo_ad,.pub_300x250,.pub_300x250m,.pub_728x90,.publicidade,.pushdown-ad,.rail-ad,.rbRectAd,.rectangle_ad,.refreshAds,.region-top-ad-position,.reklam,.reklama,.reportAdLink,.resultad,.review-ad,.right-ad,.rightAd,.right_ad,.right_ads_column,.rightad,.rightadv,.searchAds,.searchad,.searchads,.section-sponsor,.showAd,.side-ad,.side-bar-ad-position1,.sideAd,.sidebar-ads,.single-ad,.singleAd,.skinAd,.sky_ad,.skyscraperAd,.slide-ad,.smallAd,.small_ad,.smallads,.sponsor-box,.sponsor-logo,.sponsorBlock,.sponsorBottom,.sponsoredLinks,.sponsorlink,.sticky-ad,.story-ad,.taboola-ad,.tc_ad_unit,.td-ad,.td-header-ad-wrap,.text-ad,.text-ad-links,.text-ads,.textAd,.text_ad,.text_ads,.textad,.textads,.top-ad,.top-ad-container,.top-ad-content,.top-ad-wrapper,.top-advert,.topAds,.top_ad,.top_ad_div,.top_ad_wrap,.top_ads,.topads,.tower-ad,.trc-content-sponsored,.trc_rbox .syndicatedItem,.trc_rbox_border_elm .syndicatedItem,.trc_rbox_div .syndicatedItem,.trc_related_container div[data-item-syndicated="true"],.type_ads_default,.view_ad,.wideAd,.withAds,.wnad,.wpInsertInPostAd,.wp_bannerize,.yom-ad,[href^="http://join.seemygf.com/track/"],[href^="http://myalternativegflink.com/track/"],[href^="http://secure.18exgfs.com/track/"],[href^="http://secure.badassgirlfriends.com/track/"],[href^="http://secure.chatrevenge.com/track/"],[href^="http://secure.fubilov.com/track/"],[href^="http://secure.hotgfvideos.com/track/"],[href^="http://secure.mynngf.com/track/"],[href^="http://secure.obsessedwithmyself.com/track/"],[href^="http://secure.slutswithphones.com/track/"],[href^="http://secure.watchmygf.com/track/"],a[href*=".trust.zone"],a[href*="/adrotate-out.php?"],a[href*="/relap.io/adv/"],a[href*="marketgid.com/"],a[href*="medicinetizer.ru"],a[href*="runetki.com"],a[href^="http://ad-emea.doubleclick.net/"],a[href^="http://ad.doubleclick.net/"],a[href^="http://adfarm.mediaplex.com/"],a[href^="http://ads.betfair.com/redirect.aspx?"],a[href^="http://adserving.unibet.com/"],a[href^="http://adultfriendfinder.com/p/register.cgi?pid="],a[href^="http://affiliate.coral.co.uk/processing/"],a[href^="http://marketgid.com"],a[href^="http://mgid.com/"],a[href^="http://online.ladbrokes.com/promoRedirect?"],a[href^="http://pubads.g.doubleclick.net/"],a[href^="http://us.marketgid.com"],a[href^="http://www.adskeeper.co.uk/"],a[href^="http://www.fbooksluts.com/"],a[href^="http://www.fleshlight.com/"],a[href^="http://www.liutilities.com/"],a[href^="http://www.socialsex.com/"],a[href^="http://www.yourfuckbook.com/?"],a[href^="https://ad.doubleclick.net/"],a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"],div[id^="MarketGid"],div[id^="advads-"],div[id^="dfp-ad-"],div[id^="div-gpt-ad"],div[id^="google_ads_iframe_"],div[itemtype="http://schema.org/WPAdBlock"],iframe[id^="google_ads_frame"],iframe[id^="google_ads_iframe"],iframe[src^="http://ad.yieldmanager.com/"] {display: none !important; color: #f9dca3 !important; background-color: #270aae !important;}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="index" src="lan_devices_ficheiros/index.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk" src="lan_devices_ficheiros/uxfwk_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.directive.validate" src="lan_devices_ficheiros/uxfwk_014.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.validate.directive.hints" src="lan_devices_ficheiros/uxfwk_007.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="angularAMD" src="lan_devices_ficheiros/pack_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="packages" src="lan_devices_ficheiros/states.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="app-states" src="lan_devices_ficheiros/app-states.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.session.loader" src="lan_devices_ficheiros/uxfwk_011.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ui.utils" src="lan_devices_ficheiros/pack_003.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.require.html" src="lan_devices_ficheiros/uxfwk_013.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.require.lang" src="lan_devices_ficheiros/uxfwk_015.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="header" src="lan_devices_ficheiros/header.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.summary" src="lan_devices_ficheiros/summary.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.dom" src="lan_devices_ficheiros/uxfwk_017.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.string" src="lan_devices_ficheiros/uxfwk_004.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.collapse" src="lan_devices_ficheiros/uxfwk_016.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.tooltip" src="lan_devices_ficheiros/uxfwk_012.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.logout.dao" src="lan_devices_ficheiros/logout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="widgets/summary/summary.dao" src="lan_devices_ficheiros/summary_003.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.summary.portTermination" src="lan_devices_ficheiros/summary_004.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.summary.switch" src="lan_devices_ficheiros/summary_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.wifi.rules" src="lan_devices_ficheiros/fgw_010.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="lan_devices_ficheiros/pack.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.wifi.common" src="lan_devices_ficheiros/fgw_026.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.rm.cache.data.manager" src="lan_devices_ficheiros/uxfwk_006.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.require.css" src="lan_devices_ficheiros/uxfwk_005.js"></script><style data-uxfwk-path="basepack/pack.bootstrap.min" type="text/css">/*
+Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
+*/
+.select2-container {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    /* inline-block for ie7 */
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+}
+
+.select2-container,
+.select2-drop,
+.select2-search,
+.select2-search input {
+  /*
+    Force border-box so that % widths fit the parent
+    container without overlap because of margin/padding.
+    More Info : http://www.quirksmode.org/css/box.html
+  */
+  -webkit-box-sizing: border-box; /* webkit */
+     -moz-box-sizing: border-box; /* firefox */
+          box-sizing: border-box; /* css3 */
+}
+
+.select2-container .select2-choice {
+    display: block;
+    height: 26px;
+    padding: 0 0 0 8px;
+    overflow: hidden;
+    position: relative;
+
+    border: 1px solid #aaa;
+    white-space: nowrap;
+    line-height: 26px;
+    color: #444;
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    background-clip: padding-box;
+
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.5, #fff));
+    background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 50%);
+    background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);
+    background-image: linear-gradient(to top, #eee 0%, #fff 50%);
+}
+
+html[dir="rtl"] .select2-container .select2-choice {
+    padding: 0 8px 0 0;
+}
+
+.select2-container.select2-drop-above .select2-choice {
+    border-bottom-color: #aaa;
+
+    border-radius: 0 0 4px 4px;
+
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.9, #fff));
+    background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 90%);
+    background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+    background-image: linear-gradient(to bottom, #eee 0%, #fff 90%);
+}
+
+.select2-container.select2-allowclear .select2-choice .select2-chosen {
+    margin-right: 42px;
+}
+
+.select2-container .select2-choice > .select2-chosen {
+    margin-right: 26px;
+    display: block;
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+    float: none;
+    width: auto;
+}
+
+html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
+    margin-left: 26px;
+    margin-right: 0;
+}
+
+.select2-container .select2-choice abbr {
+    display: none;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 24px;
+    top: 8px;
+
+    font-size: 1px;
+    text-decoration: none;
+
+    border: 0;
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') right top no-repeat;
+    cursor: pointer;
+    outline: 0;
+}
+
+.select2-container.select2-allowclear .select2-choice abbr {
+    display: inline-block;
+}
+
+.select2-container .select2-choice abbr:hover {
+    background-position: right -11px;
+    cursor: pointer;
+}
+
+.select2-drop-mask {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    z-index: 9998;
+    /* styles required for IE to work */
+    background-color: #fff;
+    filter: alpha(opacity=0);
+}
+
+.select2-drop {
+    width: 100%;
+    margin-top: -1px;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+
+    background: #fff;
+    color: #000;
+    border: 1px solid #aaa;
+    border-top: 0;
+
+    border-radius: 0 0 4px 4px;
+
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+            box-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+}
+
+.select2-drop.select2-drop-above {
+    margin-top: 1px;
+    border-top: 1px solid #aaa;
+    border-bottom: 0;
+
+    border-radius: 4px 4px 0 0;
+
+    -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
+            box-shadow: 0 -4px 5px rgba(0, 0, 0, .15);
+}
+
+.select2-drop-active {
+    border: 1px solid #5897fb;
+    border-top: none;
+}
+
+.select2-drop.select2-drop-above.select2-drop-active {
+    border-top: 1px solid #5897fb;
+}
+
+.select2-drop-auto-width {
+    border-top: 1px solid #aaa;
+    width: auto;
+}
+
+.select2-drop-auto-width .select2-search {
+    padding-top: 4px;
+}
+
+.select2-container .select2-choice .select2-arrow {
+    display: inline-block;
+    width: 18px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    border-left: 1px solid #aaa;
+    border-radius: 0 4px 4px 0;
+
+    background-clip: padding-box;
+
+    background: #ccc;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccc), color-stop(0.6, #eee));
+    background-image: -webkit-linear-gradient(center bottom, #ccc 0%, #eee 60%);
+    background-image: -moz-linear-gradient(center bottom, #ccc 0%, #eee 60%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0);
+    background-image: linear-gradient(to top, #ccc 0%, #eee 60%);
+}
+
+html[dir="rtl"] .select2-container .select2-choice .select2-arrow {
+    left: 0;
+    right: auto;
+
+    border-left: none;
+    border-right: 1px solid #aaa;
+    border-radius: 4px 0 0 4px;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat 0 1px;
+}
+
+html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
+    background-position: 2px 1px;
+}
+
+.select2-search {
+    display: inline-block;
+    width: 100%;
+    min-height: 26px;
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    position: relative;
+    z-index: 10000;
+
+    white-space: nowrap;
+}
+
+.select2-search input {
+    width: 100%;
+    height: auto !important;
+    min-height: 26px;
+    padding: 4px 20px 4px 5px;
+    margin: 0;
+
+    outline: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+
+    border: 1px solid #aaa;
+    border-radius: 0;
+
+    -webkit-box-shadow: none;
+            box-shadow: none;
+
+    background: #fff url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat 100% -22px;
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
+}
+
+html[dir="rtl"] .select2-search input {
+    padding: 4px 5px 4px 20px;
+
+    background: #fff url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat -37px -22px;
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat -37px -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat -37px -22px, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat -37px -22px, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') no-repeat -37px -22px, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
+}
+
+.select2-drop.select2-drop-above .select2-search input {
+    margin-top: 4px;
+}
+
+.select2-search input.select2-active {
+    background: #fff url('basepack/jquery-select2-3.5.2/css/select2-spinner.gif') no-repeat 100%;
+    background: url('basepack/jquery-select2-3.5.2/css/select2-spinner.gif') no-repeat 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #eee));
+    background: url('basepack/jquery-select2-3.5.2/css/select2-spinner.gif') no-repeat 100%, -webkit-linear-gradient(center bottom, #fff 85%, #eee 99%);
+    background: url('basepack/jquery-select2-3.5.2/css/select2-spinner.gif') no-repeat 100%, -moz-linear-gradient(center bottom, #fff 85%, #eee 99%);
+    background: url('basepack/jquery-select2-3.5.2/css/select2-spinner.gif') no-repeat 100%, linear-gradient(to bottom, #fff 85%, #eee 99%) 0 0;
+}
+
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+    border: 1px solid #5897fb;
+    outline: none;
+
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.select2-dropdown-open .select2-choice {
+    border-bottom-color: transparent;
+    -webkit-box-shadow: 0 1px 0 #fff inset;
+            box-shadow: 0 1px 0 #fff inset;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(0.5, #eee));
+    background-image: -webkit-linear-gradient(center bottom, #fff 0%, #eee 50%);
+    background-image: -moz-linear-gradient(center bottom, #fff 0%, #eee 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
+    background-image: linear-gradient(to top, #fff 0%, #eee 50%);
+}
+
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+    border: 1px solid #5897fb;
+    border-top-color: transparent;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.5, #eee));
+    background-image: -webkit-linear-gradient(center top, #fff 0%, #eee 50%);
+    background-image: -moz-linear-gradient(center top, #fff 0%, #eee 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
+    background-image: linear-gradient(to bottom, #fff 0%, #eee 50%);
+}
+
+.select2-dropdown-open .select2-choice .select2-arrow {
+    background: transparent;
+    border-left: none;
+    filter: none;
+}
+html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow {
+    border-right: none;
+}
+
+.select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -18px 1px;
+}
+
+html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -16px 1px;
+}
+
+.select2-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* results */
+.select2-results {
+    max-height: 200px;
+    padding: 0 0 0 4px;
+    margin: 4px 4px 4px 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html[dir="rtl"] .select2-results {
+    padding: 0 4px 0 0;
+    margin: 4px 0 4px 4px;
+}
+
+.select2-results ul.select2-result-sub {
+    margin: 0;
+    padding-left: 0;
+}
+
+.select2-results li {
+    list-style: none;
+    display: list-item;
+    background-image: none;
+}
+
+.select2-results li.select2-result-with-children > .select2-result-label {
+    font-weight: bold;
+}
+
+.select2-results .select2-result-label {
+    padding: 3px 7px 4px;
+    margin: 0;
+    cursor: pointer;
+
+    min-height: 1em;
+
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
+
+.select2-results-dept-1 .select2-result-label { padding-left: 20px }
+.select2-results-dept-2 .select2-result-label { padding-left: 40px }
+.select2-results-dept-3 .select2-result-label { padding-left: 60px }
+.select2-results-dept-4 .select2-result-label { padding-left: 80px }
+.select2-results-dept-5 .select2-result-label { padding-left: 100px }
+.select2-results-dept-6 .select2-result-label { padding-left: 110px }
+.select2-results-dept-7 .select2-result-label { padding-left: 120px }
+
+.select2-results .select2-highlighted {
+    background: #3875d7;
+    color: #fff;
+}
+
+.select2-results li em {
+    background: #feffde;
+    font-style: normal;
+}
+
+.select2-results .select2-highlighted em {
+    background: transparent;
+}
+
+.select2-results .select2-highlighted ul {
+    background: #fff;
+    color: #000;
+}
+
+.select2-results .select2-no-results,
+.select2-results .select2-searching,
+.select2-results .select2-ajax-error,
+.select2-results .select2-selection-limit {
+    background: #f4f4f4;
+    display: list-item;
+    padding-left: 5px;
+}
+
+/*
+disabled look for disabled choices in the results dropdown
+*/
+.select2-results .select2-disabled.select2-highlighted {
+    color: #666;
+    background: #f4f4f4;
+    display: list-item;
+    cursor: default;
+}
+.select2-results .select2-disabled {
+  background: #f4f4f4;
+  display: list-item;
+  cursor: default;
+}
+
+.select2-results .select2-selected {
+    display: none;
+}
+
+.select2-more-results.select2-active {
+    background: #f4f4f4 url('basepack/jquery-select2-3.5.2/css/select2-spinner.gif') no-repeat 100%;
+}
+
+.select2-results .select2-ajax-error {
+    background: rgba(255, 50, 50, .2);
+}
+
+.select2-more-results {
+    background: #f4f4f4;
+    display: list-item;
+}
+
+/* disabled styles */
+
+.select2-container.select2-container-disabled .select2-choice {
+    background-color: #f4f4f4;
+    background-image: none;
+    border: 1px solid #ddd;
+    cursor: default;
+}
+
+.select2-container.select2-container-disabled .select2-choice .select2-arrow {
+    background-color: #f4f4f4;
+    background-image: none;
+    border-left: 0;
+}
+
+.select2-container.select2-container-disabled .select2-choice abbr {
+    display: none;
+}
+
+
+/* multiselect */
+
+.select2-container-multi .select2-choices {
+    height: auto !important;
+    height: 1%;
+    margin: 0;
+    padding: 0 5px 0 0;
+    position: relative;
+
+    border: 1px solid #aaa;
+    cursor: text;
+    overflow: hidden;
+
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eee), color-stop(15%, #fff));
+    background-image: -webkit-linear-gradient(top, #eee 1%, #fff 15%);
+    background-image: -moz-linear-gradient(top, #eee 1%, #fff 15%);
+    background-image: linear-gradient(to bottom, #eee 1%, #fff 15%);
+}
+
+html[dir="rtl"] .select2-container-multi .select2-choices {
+    padding: 0 0 0 5px;
+}
+
+.select2-locked {
+  padding: 3px 5px 3px 5px !important;
+}
+
+.select2-container-multi .select2-choices {
+    min-height: 26px;
+}
+
+.select2-container-multi.select2-container-active .select2-choices {
+    border: 1px solid #5897fb;
+    outline: none;
+
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+.select2-container-multi .select2-choices li {
+    float: left;
+    list-style: none;
+}
+html[dir="rtl"] .select2-container-multi .select2-choices li
+{
+    float: right;
+}
+.select2-container-multi .select2-choices .select2-search-field {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input {
+    padding: 5px;
+    margin: 1px 0;
+
+    font-family: sans-serif;
+    font-size: 100%;
+    color: #666;
+    outline: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: transparent !important;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input.select2-active {
+    background: #fff url('basepack/jquery-select2-3.5.2/css/select2-spinner.gif') no-repeat 100% !important;
+}
+
+.select2-default {
+    color: #999 !important;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice {
+    padding: 3px 5px 3px 18px;
+    margin: 3px 0 3px 5px;
+    position: relative;
+
+    line-height: 13px;
+    color: #333;
+    cursor: default;
+    border: 1px solid #aaaaaa;
+
+    border-radius: 3px;
+
+    -webkit-box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+
+    background-clip: padding-box;
+
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+
+    background-color: #e4e4e4;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
+    background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+}
+html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice
+{
+    margin: 3px 5px 3px 0;
+    padding: 3px 18px 3px 5px;
+}
+.select2-container-multi .select2-choices .select2-search-choice .select2-chosen {
+    cursor: default;
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus {
+    background: #d4d4d4;
+}
+
+.select2-search-choice-close {
+    display: block;
+    width: 12px;
+    height: 13px;
+    position: absolute;
+    right: 3px;
+    top: 4px;
+
+    font-size: 1px;
+    outline: none;
+    background: url('basepack/jquery-select2-3.5.2/css/select2.png') right top no-repeat;
+}
+html[dir="rtl"] .select2-search-choice-close {
+    right: auto;
+    left: 3px;
+}
+
+.select2-container-multi .select2-search-choice-close {
+    left: 3px;
+}
+
+html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
+    left: auto;
+    right: 2px;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover {
+  background-position: right -11px;
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close {
+    background-position: right -11px;
+}
+
+/* disabled styles */
+.select2-container-multi.select2-container-disabled .select2-choices {
+    background-color: #f4f4f4;
+    background-image: none;
+    border: 1px solid #ddd;
+    cursor: default;
+}
+
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
+    padding: 3px 5px 3px 5px;
+    border: 1px solid #ddd;
+    background-image: none;
+    background-color: #f4f4f4;
+}
+
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close {    display: none;
+    background: none;
+}
+/* end multiselect */
+
+
+.select2-result-selectable .select2-match,
+.select2-result-unselectable .select2-match {
+    text-decoration: underline;
+}
+
+.select2-offscreen, .select2-offscreen:focus {
+    clip: rect(0 0 0 0) !important;
+    width: 1px !important;
+    height: 1px !important;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    outline: 0 !important;
+    left: 0px !important;
+    top: 0px !important;
+}
+
+.select2-display-none {
+    display: none;
+}
+
+.select2-measure-scrollbar {
+    position: absolute;
+    top: -10000px;
+    left: -10000px;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+}
+
+/* Retina-ize icons */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 2dppx)  {
+    .select2-search input,
+    .select2-search-choice-close,
+    .select2-container .select2-choice abbr,
+    .select2-container .select2-choice .select2-arrow b {
+        background-image: url('basepack/jquery-select2-3.5.2/css/select2x2.png') !important;
+        background-repeat: no-repeat !important;
+        background-size: 60px 40px !important;
+    }
+
+    .select2-search input {
+        background-position: 100% -21px !important;
+    }
+}
+
+.form-control .select2-choice {
+
+    border: 0;
+
+    border-radius: 2px;
+
+}
+
+
+
+.form-control .select2-choice .select2-arrow {
+
+    border-radius: 0 2px 2px 0;   
+
+}
+
+
+
+.form-control.select2-container {
+
+    height: auto !important;
+
+    padding: 0px;
+
+}
+
+
+
+.form-control.select2-container.select2-dropdown-open {
+
+    border-color: #5897FB;
+
+    border-radius: 3px 3px 0 0;
+
+}
+
+
+
+.form-control .select2-container.select2-dropdown-open .select2-choices {
+
+    border-radius: 3px 3px 0 0;
+
+}
+
+
+
+.form-control.select2-container .select2-choices {
+
+    border: 0 !important;
+
+    border-radius: 3px;
+
+}
+
+
+
+.control-group.warning .select2-container .select2-choice,
+
+.control-group.warning .select2-container .select2-choices,
+
+.control-group.warning .select2-container-active .select2-choice,
+
+.control-group.warning .select2-container-active .select2-choices,
+
+.control-group.warning .select2-dropdown-open.select2-drop-above .select2-choice,
+
+.control-group.warning .select2-dropdown-open.select2-drop-above .select2-choices,
+
+.control-group.warning .select2-container-multi.select2-container-active .select2-choices {
+
+    border: 1px solid #C09853 !important;
+
+}
+
+
+
+.control-group.warning .select2-container .select2-choice div {
+
+    border-left: 1px solid #C09853 !important;
+
+    background: #FCF8E3 !important;
+
+}
+
+
+
+.control-group.error .select2-container .select2-choice,
+
+.control-group.error .select2-container .select2-choices,
+
+.control-group.error .select2-container-active .select2-choice,
+
+.control-group.error .select2-container-active .select2-choices,
+
+.control-group.error .select2-dropdown-open.select2-drop-above .select2-choice,
+
+.control-group.error .select2-dropdown-open.select2-drop-above .select2-choices,
+
+.control-group.error .select2-container-multi.select2-container-active .select2-choices {
+
+    border: 1px solid #B94A48 !important;
+
+}
+
+
+
+.control-group.error .select2-container .select2-choice div {
+
+    border-left: 1px solid #B94A48 !important;
+
+    background: #F2DEDE !important;
+
+}
+
+
+
+.control-group.info .select2-container .select2-choice,
+
+.control-group.info .select2-container .select2-choices,
+
+.control-group.info .select2-container-active .select2-choice,
+
+.control-group.info .select2-container-active .select2-choices,
+
+.control-group.info .select2-dropdown-open.select2-drop-above .select2-choice,
+
+.control-group.info .select2-dropdown-open.select2-drop-above .select2-choices,
+
+.control-group.info .select2-container-multi.select2-container-active .select2-choices {
+
+    border: 1px solid #3A87AD !important;
+
+}
+
+
+
+.control-group.info .select2-container .select2-choice div {
+
+    border-left: 1px solid #3A87AD !important;
+
+    background: #D9EDF7 !important;
+
+}
+
+
+
+.control-group.success .select2-container .select2-choice,
+
+.control-group.success .select2-container .select2-choices,
+
+.control-group.success .select2-container-active .select2-choice,
+
+.control-group.success .select2-container-active .select2-choices,
+
+.control-group.success .select2-dropdown-open.select2-drop-above .select2-choice,
+
+.control-group.success .select2-dropdown-open.select2-drop-above .select2-choices,
+
+.control-group.success .select2-container-multi.select2-container-active .select2-choices {
+
+    border: 1px solid #468847 !important;
+
+}
+
+
+
+.control-group.success .select2-container .select2-choice div {
+
+    border-left: 1px solid #468847 !important;
+
+    background: #DFF0D8 !important;
+
+}
+
+
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.home/fgw.home.ctrl" src="lan_devices_ficheiros/fgw_028.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.home.diagram" src="lan_devices_ficheiros/fgw_023.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.home/fgw.home.dao" src="lan_devices_ficheiros/fgw_003.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.lan/fgw.lan.dao" src="lan_devices_ficheiros/fgw_014.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.wifi/fgw.wifi.dao" src="lan_devices_ficheiros/fgw_013.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.router/fgw.router.ctrl" src="lan_devices_ficheiros/fgw_025.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.router/fgw.router.dao" src="lan_devices_ficheiros/fgw_005.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.wan/fgw.wan.dao" src="lan_devices_ficheiros/fgw_019.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.lan/fgw.lan.home.ctrl" src="lan_devices_ficheiros/fgw_030.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.wan/fgw.wan.home.ctrl" src="lan_devices_ficheiros/fgw_029.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.wifi/fgw.wifi.home.ctrl" src="lan_devices_ficheiros/fgw_008.js"></script><style type="text/css">.uxfwk-fgw-wifi-home .form-inline .fgw-wifi-width {
+
+  width: 88% !important; }
+
+  
+
+.uxfwk-fgw-wifi-home .form-inline .fgw-wifi-width > input {
+
+   width: 100% !important;
+
+}
+
+
+
+.uxfwk-fgw-wifi-home .fgw-wifi-attr-inline {
+
+   display: inline-block;
+
+   padding-right: 10px;
+
+   padding-left: 0px;
+
+}
+
+
+
+.uxfwk-fgw-wifi-home .fgw-wifi-attr-inline-msg {
+
+   display: inline-block;
+
+   padding: 3px 8px 6px 8px;
+
+   margin-top: 3px;
+
+}
+
+.alert.fgw-wifi-attr-inline-msg .fx-alert-icon{
+
+   top: 2px;
+
+}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.voice/fgw.voice.home.ctrl" src="lan_devices_ficheiros/fgw_021.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.voice/fgw.voice.dao" src="lan_devices_ficheiros/fgw_011.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.tv/fgw.tv.home.ctrl" src="lan_devices_ficheiros/fgw_024.js"></script><style type="text/css">.uxfwk-fgw-tv-home                       { position: relative; height: 100%; padding: 10px; }
+
+
+.uxfwk-fgw-tv-home .col-hostname         { -width: 250px; min-width: 150px; max-width: 150px }
+.uxfwk-fgw-tv-home .col-interface        { -width: 150px; min-width: 100px; max-width: 200px }
+.uxfwk-fgw-tv-home .col-macAddress       { -width: 200px; min-width: 150px; max-width: 200px }
+.uxfwk-fgw-tv-home .col-ipAddress       { -width: 200px; min-width: 100px; max-width: 190px }
+
+.uxfwk-fgw-tv-home > div:first-child                { position: relative; height: 100%;}
+.uxfwk-fgw-tv-home .uxfwk-fgw-tv-home-table           { height: 100%; }
+.uxfwk-fgw-tv-home .table #interface { -width: 50%; }
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.tv/fgw.tv.dao" src="lan_devices_ficheiros/fgw_033.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.security/fgw.security.home.ctrl" src="lan_devices_ficheiros/fgw_035.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.table" src="lan_devices_ficheiros/uxfwk_008.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.security.parentalmodal" src="lan_devices_ficheiros/fgw_009.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.security.urlmodal" src="lan_devices_ficheiros/fgw_006.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.warningmodal.deleteEntry" src="lan_devices_ficheiros/warningmodal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.security/fgw.security.dao" src="lan_devices_ficheiros/fgw_015.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ui.mask" src="lan_devices_ficheiros/angular-ui-mask-1.js"></script><style type="text/css">.uxfwk-fgw-security-home .col-deviceName     { width: 300px; }
+
+.uxfwk-fgw-security-home .col-mac            { width: 150px; }
+
+.uxfwk-fgw-security-home .col-blockStatus    { width: 200px; }
+
+.uxfwk-fgw-security-home .col-weekDays       { width: 150px; }
+
+.uxfwk-fgw-security-home .col-blockingTime   { width: 130px; }
+
+
+
+.uxfwk-fgw-security-home .col-whiteList      { width: 250px; }
+
+.uxfwk-fgw-security-home .col-blackList      { width: 250px; }s
+
+
+
+.uxfwk-fgw-security-home.uxfwk-form .fx-form-block input[type="checkbox"] { margin-top: 0px; }
+
+
+
+.fgw-security-parentalmodal .modal-dialog .block-time-week-days { margin-top: 5px; }</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.ui.button.refresh" src="lan_devices_ficheiros/uxfwk_010.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.rm.ui.data.view" src="lan_devices_ficheiros/uxfwk_003.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.table.component.data.row" src="lan_devices_ficheiros/uxfwk.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.data.cache.manager" src="lan_devices_ficheiros/uxfwk_009.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.security/fgw.security.nat.ctrl" src="lan_devices_ficheiros/fgw_031.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.security.deleteModal" src="lan_devices_ficheiros/fgw_018.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.security.portforwardmodal" src="lan_devices_ficheiros/fgw_002.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.security.portactivationmodal" src="lan_devices_ficheiros/fgw_017.js"></script><style type="text/css">
+
+.fgw-nat .fgw-input-sm-width {
+
+  width: 50px !important;
+
+  padding: 0 4px; }
+
+  
+
+.fgw-nat .fgw-select-sm-width {
+
+  width: 90px !important; }
+
+  
+
+.fgw-nat-row {
+
+   width: 95%;
+
+}
+
+
+
+.form-inline .fgw-nat-row + .fgw-nat-row {
+
+  margin-top: 5px; }
+
+
+
+.fgw-nat-button-remove {
+
+   float: right;
+
+}
+
+.fgw-nat-button-add {
+
+   display: inline-block;
+
+}
+
+.fgw-modal-forward-xl .modal-dialog {
+
+   width: 98%;
+
+}
+
+@media (min-width: 820px){
+
+   .fgw-modal-forward-xl .modal-dialog {
+
+    width: 800px;
+
+   }
+
+}
+
+.fgw-modal-app-xl .modal-dialog {
+
+   width: 98%;
+
+}
+
+
+
+@media (min-width: 1000px){
+
+   .fgw-modal-app-xl .modal-dialog {
+
+    width: 950px;
+
+   }
+
+}
+
+
+
+#modalDeleteNat .table > tbody > tr > td{
+
+   vertical-align: middle;
+
+}
+
+#modalDeleteNat .select{
+
+   width: 35px !important; 
+
+}
+
+
+
+.fgw-nat-portact-infomsg{
+
+   max-width: none !important;
+
+   margin-right: 15px !important;
+
+}
+
+</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.contents/fgw.contents.home.ctrl" src="lan_devices_ficheiros/fgw_020.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.contents.modal" src="lan_devices_ficheiros/fgw.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.contents/fgw.contents.dao" src="lan_devices_ficheiros/fgw_016.js"></script><style type="text/css">.uxfwk-fgw-contents-home .form-inline .fgw-contents-width {
+
+  width: 88% !important; }
+
+  
+
+.uxfwk-fgw-contents-home .form-inline .fgw-contents-width > input {
+
+   width: 100% !important;
+
+}
+
+.uxfwk-fgw-contents-home .form-inline .fgw-contents-width > div {
+
+   width: 100% !important;
+
+}
+
+
+
+.uxfwk-fgw-contents-home .fgw-contents-attr-inline {
+
+   display: inline-block;
+
+   padding-right: 10px;
+
+   padding-left: 0px;
+
+}
+
+
+
+.uxfwk-fgw-contents-home .fgw-contents-attr-inline-msg {
+
+   display: inline-block;
+
+   padding: 3px 8px 6px 8px;
+
+   margin-top: 3px;
+
+   max-width: none;
+
+   width: auto;
+
+}
+
+.alert.fgw-contents-attr-inline-msg .fx-alert-icon{
+
+   top: 2px;
+
+}</style><link type="text/css" rel="stylesheet" href="lan_devices_ficheiros/fgw.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.tools/fgw.tools.home.ctrl" src="lan_devices_ficheiros/fgw_007.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.tools.restore.modal" src="lan_devices_ficheiros/fgw_004.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uxfwk.fgw.tools.warningmodal" src="lan_devices_ficheiros/fgw_034.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.tools/fgw.tools.dao" src="lan_devices_ficheiros/fgw_027.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.myaccount/fgw.myaccount.home.ctrl" src="lan_devices_ficheiros/fgw_012.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.myaccount/fgw.myaccount.dao" src="lan_devices_ficheiros/fgw_022.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="modules/fgw.lan/fgw.lan.devices.ctrl" src="lan_devices_ficheiros/fgw_032.js"></script><style type="text/css">.uxfwk-fgw-lan-devices                       { position: relative; height: 100%; padding: 10px; }
+.uxfwk-fgw-lan-devices table                 { table-layout: fixed; width: auto;  max-width: none; }
+.uxfwk-fgw-lan-devices .col-portName         { -width: 140px; min-width: 140px; }
+.uxfwk-fgw-lan-devices .col-status           { -width: 150px; min-width: 150px; }
+.uxfwk-fgw-lan-devices .col-hostName         { -width: 250px; min-width: 250px; }
+.uxfwk-fgw-lan-devices .col-mac              { -width: 150px; min-width: 150px; }
+.uxfwk-fgw-lan-devices .col-ip               { -width: 150px; min-width: 150px; }
+.uxfwk-fgw-lan-devices .col-ipv6             { -width: 300px; min-width: 300px; }
+.uxfwk-fgw-lan-devices .col-linkLocalIpv6    { -width: 300px; min-width: 300px; }
+.uxfwk-fgw-lan-devices .col-leaseTime        { -width: 250px; min-width: 250px; }
+
+.uxfwk-fgw-lan-devices > div:first-child                { position: relative; height: 100%;}
+.uxfwk-fgw-lan-devices .uxfwk-fgw-lan-devices-table { height: 100%; }
+
+.uxfwk-table-wrapper { display: block; overflow-x: auto; }</style></head>
+	<body data-ng-controller="mainCtrl" style="display: block;" class="ng-scope">
+	
+      <!--HEADER-->
+      <!-- ngInclude: --><div data-ng-include="" src="'widgets/header/header.html'" data-ng-init="headerContentVisible=true" class="ng-scope"><nav data-ng-controller="uxfwk.header" class="fgw-header navbar navbar-inverse navbar-fixed-top ng-scope">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">
+                <img alt="" src="lan_devices_ficheiros/logo.png">
+                <span class="sr-only"></span>
+                <!-- ngIf: !!headerContentVisible --><div data-ng-if="!!headerContentVisible" class="fgw-model ng-binding ng-scope">
+                    GR241AG
+                </div><!-- end ngIf: !!headerContentVisible -->
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- ngIf: !!headerContentVisible --><div data-ng-if="!!headerContentVisible" class="collapse navbar-collapse fgw-main-nav ng-scope" id="navbar-menu">
+            <ul class="nav navbar-nav">                
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.home" href="#/gui/home"><span><i class="icon fgw-home"></i><span data-translate="TEXT.FGW.NAVIGATION.HOME" class="ng-scope">Início</span></span></a></li>
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.security" href="#/gui/security"><span><i class="icon fgw-shield"></i><span data-translate="TEXT.FGW.NAVIGATION.SECURITY" class="ng-scope">Segurança</span></span></a></li>
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.contents" href="#/gui/services"><span><i class="icon fgw-cogs"></i><span data-translate="TEXT.FGW.NAVIGATION.CONTENTS" class="ng-scope">Serviços</span></span></a></li>
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.tools" href="#/gui/tools"><span><i class="icon fgw-configuration"></i><span data-translate="TEXT.FGW.NAVIGATION.TOOLS" class="ng-scope">Ferramentas</span></span></a></li>
+                <!-- <li data-ui-sref-active="active"><a data-ui-sref="gui.help"><span><i class="icon fgw-book"></i><span data-translate="TEXT.FGW.NAVIGATION.HELP"></span></span></a></li> -->
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.myaccount" href="#/gui/myaccount"><span><i class="icon fgw-user"></i><span data-translate="TEXT.FGW.NAVIGATION.MYACCOUNT" class="ng-scope">Minha conta</span></span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right fgw-language">
+                <li data-ng-class="{'active': language=='pt-PT'}" class="active">
+                    <a title="PT" data-ng-click="configLang('pt-PT')">PT</a>
+                </li>
+                <li data-ng-class="{'active': language=='en'}">
+                    <a title="EN" data-ng-click="configLang('en')">EN</a>
+                </li>
+                <li class="fgw-logout">
+                    <a title="terminar sessão" data-ng-click="logout()">
+                        <i class="icon fgw-power-off"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </div><!-- end ngIf: !!headerContentVisible --><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav></div>
+
+      <!--LEFT COLUMN & CONTENT-->
+      <div class="fgw-page-wrap">
+         <div class="fgw-summary-wrap" data-fgw-resize="summary" style="height: 631px;">
+            <!--div ddata-ng-include src="'views/summary/default.html'" ddata-ng-controller="Summary"></div-->
+            <div data-uxfwk-fgw-summary="" class="ng-isolate-scope"><div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
+   <a data-ui-sref="gui.router" href="#/gui/fgw">
+      <!-- Router -->
+      <h4><i class="icon fgw-router"></i> <span data-translate="TEXT.COMMON.TITLE.ROUTER" class="ng-scope">FGW</span><span data-translate="TEXT.COMMON.SUBTITLE.ROUTER" class="ng-scope">Fiber Gateway</span></h4>
+      <div class="form-horizontal">
+         <!-- Sw version -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.ROUTER.SWVERSION">Versão de software</label>
+               <div class="col-md-6">
+                  <p class="form-control-static ng-binding">00000000000000</p>
+               </div>
+            </div>
+         </div>
+         <!-- Serial number -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.ROUTER.SERIALNUMBER">Número de série</label>
+               <div class="col-md-6">
+                  <p class="form-control-static ng-binding">0000000000000000</p>
+               </div>
+            </div>
+         </div>
+         <!-- MAC address -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.ROUTER.MAC">Endereço MAC</label>
+               <div class="col-md-6">
+                  <p class="form-control-static ng-binding">00:00:00:00:00:00</p>
+               </div>
+            </div>
+         </div>
+         <!-- Uptime -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.ROUTER.UPTIME">Uptime</label>
+               <div class="col-md-6">
+                  <p class="form-control-static ng-binding">43d 20h 12m 36s</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div>
+<div class="fgw-bs-row-container fgw-summary-block ng-scope active" data-ui-sref-active="active">
+   <a data-ui-sref="gui.lan" href="#/gui/lan">
+      <h4><i class="icon fgw-lan"></i> <span data-translate="TEXT.COMMON.TITLE.LAN" class="ng-scope">LAN</span><span data-translate="TEXT.COMMON.SUBTITLE.LAN" class="ng-scope">Local Area Network</span></h4>
+      <div class="form-horizontal">     
+         <!-- Port status -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.LAN.PORTSTATUS">Estado dos portos</label>
+               <div class="col-md-6">
+                  <div class="form-control-static ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-uxfwk-fgw-summary-port-termination="" data-ng-model="data.lan.ports"><div class="fgw-port-status-wrap"><!-- ngRepeat: portUp in currentPortStatus --><i data-ng-repeat="portUp in currentPortStatus" class="icon fgw-termination-point-alt ng-scope fgw-text-success" data-ng-class=" (!!portUp.status) ? 'fgw-text-success' : '' "></i><!-- end ngRepeat: portUp in currentPortStatus --><i data-ng-repeat="portUp in currentPortStatus" class="icon fgw-termination-point-alt ng-scope" data-ng-class=" (!!portUp.status) ? 'fgw-text-success' : '' "></i><!-- end ngRepeat: portUp in currentPortStatus --><i data-ng-repeat="portUp in currentPortStatus" class="icon fgw-termination-point-alt ng-scope fgw-text-success" data-ng-class=" (!!portUp.status) ? 'fgw-text-success' : '' "></i><!-- end ngRepeat: portUp in currentPortStatus --><i data-ng-repeat="portUp in currentPortStatus" class="icon fgw-termination-point-alt ng-scope fgw-text-success" data-ng-class=" (!!portUp.status) ? 'fgw-text-success' : '' "></i><!-- end ngRepeat: portUp in currentPortStatus --></div></div>
+               </div>
+            </div>
+         </div>
+         <!-- IP Address -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.LAN.IPADRESS">Default gateway</label>
+               <div class="col-md-6">
+                  <p class="form-control-static ng-binding">192.168.1.254</p>
+               </div>
+            </div>
+         </div>
+         <!-- DHCP -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.LAN.DHCP">DHCP</label>
+               <div class="col-md-6">
+                  <div class="form-control-static ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-uxfwk-fgw-summary-switch="" data-ng-model="data.lan.dhcpStatus"><div class="ng-pristine ng-untouched ng-valid ng-not-empty" fgw-toggle="" data-ng-model="element.value" data-size="xmini" data-on="on" data-off="off" data-readonly="" data-disabled=""><div class="toggle btn disabled fgw-btn-xxs btn-success" disabled="disabled" style="width: 29px; height: 17px;"><div class="toggle-group"><label class="don btn btn-success fgw-btn-xxs toggle-on">on</label><label class="doff active btn btn-default fgw-btn-xxs toggle-off">off</label><span class="toggle-handle btn btn-default fgw-btn-xxs" style=""></span></div></div></div></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div>
+<div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
+   <a data-ui-sref="gui.wan" href="#/gui/wan">
+      <h4><i class="icon fgw-provision"></i> <span data-translate="TEXT.COMMON.TITLE.WAN" class="ng-scope">WAN</span><span data-translate="TEXT.COMMON.SUBTITLE.WAN" class="ng-scope">Wide Area Network</span></h4>
+      <div class="form-horizontal">     
+         <!-- Port status -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.WAN.PORTSTATUS">Estado do porto</label>
+               <div class="col-md-6">
+                  <div class="form-control-static ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-uxfwk-fgw-summary-port-termination="" data-ng-model="data.wan.ports"><div class="fgw-port-status-wrap"><!-- ngRepeat: portUp in currentPortStatus --><i data-ng-repeat="portUp in currentPortStatus" class="icon fgw-termination-point-alt ng-scope fgw-text-success" data-ng-class=" (!!portUp.status) ? 'fgw-text-success' : '' "></i><!-- end ngRepeat: portUp in currentPortStatus --></div></div>
+               </div>
+            </div>
+         </div>
+         <!-- RX CATV power -->
+         <div>
+            <!-- ngIf: isCATVVisible(data.wan.opticalInterface.optPowerCatvRx) --><div class="form-group ng-scope" data-ng-if="isCATVVisible(data.wan.opticalInterface.optPowerCatvRx)">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.WAN.RXCATVPOWER">Potência RX CATV</label>
+               <div class="col-md-6">
+                  <p class="form-control-static ng-binding">0.260  dBm</p>
+               </div>
+            </div><!-- end ngIf: isCATVVisible(data.wan.opticalInterface.optPowerCatvRx) -->
+         </div>
+         <!-- RX optical power -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.WAN.RXOPTICALPOWER">Potência ótica RX</label>
+               <div class="col-md-6">
+                  <p class="form-control-static ng-binding">-18.508  dBm</p>
+               </div>
+            </div>
+         </div>
+         <!-- TX optical power -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.WAN.TXOPTICALPOWER">Potência ótica TX</label>
+               <div class="col-md-6">
+                  <p class="form-control-static ng-binding">2.440  dBm</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div>
+<div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
+   <a data-ui-sref="gui.wifi" href="#/gui/wifi">
+      <h4><i class="icon fgw-wifi"></i> <span data-translate="TEXT.COMMON.TITLE.WIFI" class="ng-scope">Wi-Fi</span></h4>
+      <div class="form-horizontal">     
+         <!-- Wifi0 -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.WIFI.WIFI_2_4GHZ">Wi-Fi 2,4 GHz</label>
+               <div class="col-md-6">
+                  <div class="form-control-static ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-uxfwk-fgw-summary-switch="" data-ng-model="data.wifi.wifi0Mode"><div class="ng-pristine ng-untouched ng-valid ng-not-empty" fgw-toggle="" data-ng-model="element.value" data-size="xmini" data-on="on" data-off="off" data-readonly="" data-disabled=""><div class="toggle btn disabled fgw-btn-xxs btn-success" disabled="disabled" style="width: 29px; height: 17px;"><div class="toggle-group"><label class="don btn btn-success fgw-btn-xxs toggle-on">on</label><label class="doff active btn btn-default fgw-btn-xxs toggle-off">off</label><span class="toggle-handle btn btn-default fgw-btn-xxs" style=""></span></div></div></div></div>
+               </div>
+            </div>
+         </div>
+         <!-- ngIf: isVisible(data.wifi.wifi0Mode) --><div data-ng-if="isVisible(data.wifi.wifi0Mode)" class="ng-scope">
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.WIFI.SSID">SSID</label>
+               <div class="col-md-6">
+                  <!-- <p class="form-control-static" >{{ data.wifi.wifi0Ssid | uxfwkNullHider }}</p> -->
+                  <p class="fgw-summary-format"><span data-uxfwk-json-textualize="ssid.texter(data, 'data.wifi.wifi0Ssid')" class="ng-scope" title="RedeTeste">RedeTeste</span></p>
+               </div>
+            </div>
+         </div><!-- end ngIf: isVisible(data.wifi.wifi0Mode) -->
+         <!-- Wifi1 -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.WIFI.WIFI_5GHZ">Wi-Fi 5 GHz</label>
+               <div class="col-md-6">
+                  <div class="form-control-static ng-pristine ng-untouched ng-valid ng-scope ng-not-empty" data-uxfwk-fgw-summary-switch="" data-ng-model="data.wifi.wifi1Mode"><div class="ng-pristine ng-untouched ng-valid ng-not-empty" fgw-toggle="" data-ng-model="element.value" data-size="xmini" data-on="on" data-off="off" data-readonly="" data-disabled=""><div class="toggle btn disabled fgw-btn-xxs btn-success" disabled="disabled" style="width: 29px; height: 17px;"><div class="toggle-group"><label class="don btn btn-success fgw-btn-xxs toggle-on">on</label><label class="doff active btn btn-default fgw-btn-xxs toggle-off">off</label><span class="toggle-handle btn btn-default fgw-btn-xxs" style=""></span></div></div></div></div>
+               </div>
+            </div>
+         </div>
+         <!-- ngIf: isVisible(data.wifi.wifi1Mode) --><div data-ng-if="isVisible(data.wifi.wifi1Mode)" class="ng-scope">
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.WIFI.SSID">SSID</label>
+               <div class="col-md-6">
+                  <!-- <p class="form-contol-static" >{{ data.wifi.wifi1Ssid | uxfwkNullHider }}</p> -->
+                  <p class="fgw-summary-format"><span data-uxfwk-json-textualize="ssid.texter(data, 'data.wifi.wifi1Ssid')" class="ng-scope" title="RedeTeste_5G">RedeTeste_5G</span></p>
+               </div>
+            </div>
+         </div><!-- end ngIf: isVisible(data.wifi.wifi1Mode) -->
+      </div>
+   </a>
+</div>
+<div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
+   <a data-ui-sref="gui.voice" href="#/gui/voice">
+      <h4><i class="icon fgw-rdis"></i> <span data-translate="TEXT.COMMON.TITLE.VOICE" class="ng-scope">Voz</span></h4>
+      <div class="form-horizontal">     
+         <!-- SIP register -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.VOICE.SIPACCOUN1TSTATUS">Estado da conta</label>
+
+               <div class="col-md-6">
+                  <p class="form-control-static">
+                     <!-- <span class="form-control-static">{{ data.voice.status1 | uxfwkNullHider }}</span> -->
+                     <!-- ngIf: 'Up' === data.voice.status1 --><span data-ng-if="'Up' === data.voice.status1" class="ng-scope"><span class="fgw-text-success"><i class="icon fgw-circle"></i></span><span data-translate="TEXT.COMMON.LABEL.REGISTERED" class="ng-scope"> registado</span></span><!-- end ngIf: 'Up' === data.voice.status1 -->
+                     <!-- ngIf: 'Registering' === data.voice.status1 -->
+                     <!-- ngIf: 'Disabled' === data.voice.status1 -->
+                     <!-- <span data-ng-if="!!data.voice.sipRegisterStatus"><span class="fgw-text-success"><i class="icon fgw-circle"></i></span><span data-translate="TEXT.COMMON.LABEL.ON"></span></span>
+                     <span data-ng-if="!data.voice.sipRegisterStatus"><span class="fgw-text-danger" ><i class="icon fgw-circle"></i></span><span data-translate="TEXT.COMMON.LABEL.OFF"></span></span> -->
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- ngIf: 0 -->
+         <!-- Extension -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.VOICE.EXTENSION">Extensão</label>
+               <div class="col-md-6">
+                  <span class="form-control-static ng-binding"> +351210000000</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div>
+<div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
+   <a data-ui-sref="gui.tv" href="#/gui/tv">
+      <h4><i class="icon fgw-television"></i> <span data-translate="TEXT.COMMON.TITLE.TV" class="ng-scope">Televisão</span></h4>
+      <div class="form-horizontal">     
+         <!-- Service status -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.TV.SERVICESTATUS">IPTV</label>
+               <div class="col-md-6">
+                  <p class="form-control-static">
+                     <!-- ngIf: !!data.tv.status --><span data-ng-if="!!data.tv.status" class="ng-scope"><span class="fgw-text-success"><i class="icon fgw-circle"></i></span><span data-translate="TEXT.COMMON.LABEL.ON" class="ng-scope"> ligado</span></span><!-- end ngIf: !!data.tv.status -->
+                     <!-- ngIf: !data.tv.status -->
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- RFTV status -->
+         <div>
+            <div class="form-group">
+               <label class="col-md-6 control-label ng-scope" data-translate="TEXT.COMMON.SUMMARY.TV.RFTVSTATUS">RFTV</label>
+               <div class="col-md-6">
+                  <p class="form-control-static">
+                     <!-- ngIf: 0 === data.tv.rftv -->
+                     <!-- ngIf: 1 === data.tv.rftv -->
+                     <!-- ngIf: 2 === data.tv.rftv --><span data-ng-if="2 === data.tv.rftv" class="ng-scope"><span class="fgw-text-success"><i class="icon fgw-circle"></i></span><span data-translate="TEXT.COMMON.LABEL.ON" class="ng-scope"> ligado</span></span><!-- end ngIf: 2 === data.tv.rftv -->
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div></div>
+         </div>
+         <!-- uiView: body-view --><div class="fgw-page-content-wrap ng-scope" data-ui-view="body-view"><div class="fgw-page-title clearfix ng-scope"><div class="pull-left"><h1><i class="icon fgw-lan"></i><span data-translate="TEXT.COMMON.TITLE.LAN" class="ng-scope">LAN</span><span data-translate="TEXT.COMMON.SUBTITLE.LAN" class="ng-scope">Local Area Network</span></h1></div><!-- ngIf: false --></div><div class="fgw-page-content ng-scope" fgw-resize="content" style="min-height: 487px;"><nav class="fgw-main-tabs"><ul class="nav nav-tabs"><li data-ui-sref-active="active" class=""><a data-ui-sref="gui.lan.home" data-translate="TEXT.COMMON.TABS.CHARACTERISTICS" class="ng-scope" href="#/gui/lan/home">Características</a></li><li data-ui-sref-active="active" class="active"><a data-ui-sref="gui.lan.devices" data-translate="TEXT.COMMON.TABS.DEVICES" class="ng-scope" href="#/gui/lan/devices">Dispositivos</a></li><li data-ui-sref-active="active"><a data-ui-sref="gui.lan.statistics" data-translate="TEXT.COMMON.TABS.STATISTICS" class="ng-scope" href="#/gui/lan/statistics">Estatísticas</a></li><li data-ui-sref-active="active"><a data-ui-sref="gui.lan.staticleases" data-translate="TEXT.COMMON.TABS.STATICLEASES" class="ng-scope" href="#/gui/lan/staticleases">Leases estáticas</a></li></ul></nav><!-- uiView: body-bottom-view --><div class="body-bottom-view ng-scope" data-ui-view="body-bottom-view"><div class="uxfwk-fgw-lan-devices ng-scope ng-isolate-scope" data-uxfwk-load-panel="fgwLanDevices.loadInProgress" data-uxfwk-load-panel-error="fgwLanDevices.criticalError">
+   <!-- ngIf: fgwLanDevices.dependenciesResolved --><div data-ng-if="fgwLanDevices.dependenciesResolved" class="ng-scope">
+      <div class="uxfwk-fgw-lan-devices-table">
+            <!--This DIV shall be used for advanced filter form -->
+            <div class="clearfix fgw-table-toolbar">
+               <div class="fgw-table-toolbar-actions">
+<!--                   <div class="btn-group">
+                     <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" placeholder="{{:: 'TEXT.COMMON.SEARCH' | translate }}...">
+                        <span class="input-group-btn">
+                           <button class="btn btn-primary" type="button" title="{{:: 'TEXT.COMMON.SEARCH' | translate }}"><i class="icon fgw-search"></i></button>
+                        </span>
+                     </div>
+                  </div> -->
+                  <div class="btn-group">
+                     <div class="fgw-filter-container">
+                        <i class="icon fgw-search fgw-icon"></i>
+                        <input class="form-control input-sm ng-pristine ng-untouched ng-valid ng-empty" data-ng-model="fgwLanDevices.search.expression" data-ng-change="fgwLanDevices.actionFilterData(true)" placeholder="pesquisa..." type="text">
+                     </div>
+                  </div>
+                  <button class="btn btn-sm btn-default" type="button" data-ng-click="fgwLanDevices.actionGetData()" title="refresh"><i class="icon fgw-refresh"></i></button>
+                  <!-- <button class="btn btn-sm btn-default" type="button" title="export"><i class="icon fgw-export"></i></button> -->
+               </div>
+            </div>
+
+            <!--This Table shall define every the table schema -->
+            <div class="uxfwk-table-wrapper">
+            <table class="table table-striped">
+               <thead>
+                  <tr>
+                     <th class="col-hostName ng-binding fgw-sorting" data-fgw-table-sort="{ id:'hostName', fnSort:fgwLanDevices.actionSortData, currentSortKey:'fgwLanDevices.currentSortKey' }">Nome do host</th>
+                     <th class="col-portName ng-binding fgw-sorting" data-fgw-table-sort="{ id:'portName', fnSort:fgwLanDevices.actionSortData, currentSortKey:'fgwLanDevices.currentSortKey' }">Nome do porto</th>
+                     <th class="col-status ng-binding fgw-sorting" data-fgw-table-sort="{ id:'status', fnSort:fgwLanDevices.actionSortData, currentSortKey:'fgwLanDevices.currentSortKey' }">Estado</th>
+<!--                      <th data-uxfwk-table-column="duplexMode">{{:: 'TEXT.FGW.LAN.DEVICES.COMMON.DUPLEXNAME' | translate }}</th>
+                     <th data-uxfwk-table-column="speed">{{:: 'TEXT.FGW.LAN.DEVICES.COMMON.SPEED' | translate }}</th> -->
+                     <th class="col-mac ng-binding fgw-sorting" data-fgw-table-sort="{ id:'mac', fnSort:fgwLanDevices.actionSortData, currentSortKey:'fgwLanDevices.currentSortKey' }">MAC</th>
+                     <th class="col-ip ng-binding fgw-sorting" data-fgw-table-sort="{ id:'ip', fnSort:fgwLanDevices.actionSortData, currentSortKey:'fgwLanDevices.currentSortKey' }">IPv4</th>
+                     <th class="col-leaseTime ng-binding fgw-sorting" data-fgw-table-sort="{ id:'leaseTime', fnSort:fgwLanDevices.actionSortData, currentSortKey:'fgwLanDevices.currentSortKey' }">Tempo de lease</th>
+                     <th class="col-ipv6 ng-binding fgw-sorting" data-fgw-table-sort="{ id:'ipv6', fnSort:fgwLanDevices.actionSortData, currentSortKey:'fgwLanDevices.currentSortKey' }">IPv6</th>
+                     <th class="col-linkLocalIpv6 ng-binding fgw-sorting" data-fgw-table-sort="{ id:'linkLocalIpv6', fnSort:fgwLanDevices.actionSortData, currentSortKey:'fgwLanDevices.currentSortKey' }">Link local IPv6</th>
+<!--                      <th></th> -->
+                  </tr>
+               </thead>
+               <tbody>
+                  <!-- ngRepeat: device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize --><tr data-ng-repeat="device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize" class="ng-scope">
+                     <td class="col-hostName ng-binding" data-fgw-table-cell="{ id:'hostName', currentSortKey:'fgwLanDevices.currentSortKey' }"> </td>
+                     <td class="col-portName ng-binding" data-fgw-table-cell="{ id:'portName', currentSortKey:'fgwLanDevices.currentSortKey' }">LAN 4</td>
+                     <td class="col-status" data-fgw-table-cell="{ id:'status', currentSortKey:'fgwLanDevices.currentSortKey' }">
+                        <!-- <span data-ng-if="!device.status">---</span> -->
+                        <span>
+                           <!-- ngIf: !!device.status --><span class="fgw-text-success ng-scope" data-ng-if="!!device.status"><i class="icon fgw-circle"></i><span data-translate="TEXT.COMMON.LABEL.ON" class="ng-scope"> ligado</span></span><!-- end ngIf: !!device.status -->
+                           <!-- ngIf: !device.status -->
+                        </span>
+                     </td>
+<!--                      <td>{{ device.duplexMode | uxfwkNullHider }}</td>
+                     <td>{{ device.speed | uxfwkNullHider }}</td> -->
+                     <td class="col-mac ng-binding" data-fgw-table-cell="{ id:'mac', currentSortKey:'fgwLanDevices.currentSortKey' }">00:1c:ea:ae:a7:4d</td>
+                     <td class="col-ip ng-binding" data-fgw-table-cell="{ id:'ip', currentSortKey:'fgwLanDevices.currentSortKey' }">192.168.1.64</td>
+                     <td class="col-leaseTime ng-binding" data-fgw-table-cell="{ id:'leaseTime', currentSortKey:'fgwLanDevices.currentSortKey' }">49 minutos, 3 segundos</td>
+                     <td class="col-ipv6 ng-binding" data-fgw-table-cell="{ id:'ipv6', currentSortKey:'fgwLanDevices.currentSortKey' }"> </td>
+                     <td class="col-linkLocalIpv6 ng-binding" data-fgw-table-cell="{ id:'linkLocalIpv6', currentSortKey:'fgwLanDevices.currentSortKey' }"> </td>
+<!--                      <td class="fgw-table-actions">
+                        <a href="#" class="btn btn-link btn-link-in-table" data-ng-repeat="icon in device.actions">
+                           <i class="icon fgw-{{icon}}"></i>
+                        </a>
+                     </td> -->
+                  </tr><!-- end ngRepeat: device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize --><tr data-ng-repeat="device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize" class="ng-scope">
+                     <td class="col-hostName ng-binding" data-fgw-table-cell="{ id:'hostName', currentSortKey:'fgwLanDevices.currentSortKey' }">Darkjason13</td>
+                     <td class="col-portName ng-binding" data-fgw-table-cell="{ id:'portName', currentSortKey:'fgwLanDevices.currentSortKey' }">LAN 3</td>
+                     <td class="col-status" data-fgw-table-cell="{ id:'status', currentSortKey:'fgwLanDevices.currentSortKey' }">
+                        <!-- <span data-ng-if="!device.status">---</span> -->
+                        <span>
+                           <!-- ngIf: !!device.status --><span class="fgw-text-success ng-scope" data-ng-if="!!device.status"><i class="icon fgw-circle"></i><span data-translate="TEXT.COMMON.LABEL.ON" class="ng-scope"> ligado</span></span><!-- end ngIf: !!device.status -->
+                           <!-- ngIf: !device.status -->
+                        </span>
+                     </td>
+<!--                      <td>{{ device.duplexMode | uxfwkNullHider }}</td>
+                     <td>{{ device.speed | uxfwkNullHider }}</td> -->
+                     <td class="col-mac ng-binding" data-fgw-table-cell="{ id:'mac', currentSortKey:'fgwLanDevices.currentSortKey' }">54:a0:50:04:cf:d0</td>
+                     <td class="col-ip ng-binding" data-fgw-table-cell="{ id:'ip', currentSortKey:'fgwLanDevices.currentSortKey' }">192.168.1.65</td>
+                     <td class="col-leaseTime ng-binding" data-fgw-table-cell="{ id:'leaseTime', currentSortKey:'fgwLanDevices.currentSortKey' }">30 minutos, 8 segundos</td>
+                     <td class="col-ipv6 ng-binding" data-fgw-table-cell="{ id:'ipv6', currentSortKey:'fgwLanDevices.currentSortKey' }">2001:2:2:2b8de:fbcc:90ec:c99c,2001:2:2:25c89:d3c2:4c2e:f87a,2001:2:2:22402:209e:dbea:fd07,2001:2:2:2956b:a839:c27b:dccd,2001:2:2:2b805:b09:ba36:2cdc,2001:2:2:216f:7bc9:af23:ea61,2001:2:2:26809:48ba:854b:b882,2001:2:2:26c44:61ce:72ca:ba65,2001:2:2:2d50d:c99b:1f26:50e6</td>
+                     <td class="col-linkLocalIpv6 ng-binding" data-fgw-table-cell="{ id:'linkLocalIpv6', currentSortKey:'fgwLanDevices.currentSortKey' }">fe80::b8de:fbcc:90ec:c99c</td>
+<!--                      <td class="fgw-table-actions">
+                        <a href="#" class="btn btn-link btn-link-in-table" data-ng-repeat="icon in device.actions">
+                           <i class="icon fgw-{{icon}}"></i>
+                        </a>
+                     </td> -->
+                  </tr><!-- end ngRepeat: device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize --><tr data-ng-repeat="device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize" class="ng-scope">
+                     <td class="col-hostName ng-binding" data-fgw-table-cell="{ id:'hostName', currentSortKey:'fgwLanDevices.currentSortKey' }">android-d4dbdd3bc371ccc5</td>
+                     <td class="col-portName ng-binding" data-fgw-table-cell="{ id:'portName', currentSortKey:'fgwLanDevices.currentSortKey' }">LAN 1</td>
+                     <td class="col-status" data-fgw-table-cell="{ id:'status', currentSortKey:'fgwLanDevices.currentSortKey' }">
+                        <!-- <span data-ng-if="!device.status">---</span> -->
+                        <span>
+                           <!-- ngIf: !!device.status --><span class="fgw-text-success ng-scope" data-ng-if="!!device.status"><i class="icon fgw-circle"></i><span data-translate="TEXT.COMMON.LABEL.ON" class="ng-scope"> ligado</span></span><!-- end ngIf: !!device.status -->
+                           <!-- ngIf: !device.status -->
+                        </span>
+                     </td>
+<!--                      <td>{{ device.duplexMode | uxfwkNullHider }}</td>
+                     <td>{{ device.speed | uxfwkNullHider }}</td> -->
+                     <td class="col-mac ng-binding" data-fgw-table-cell="{ id:'mac', currentSortKey:'fgwLanDevices.currentSortKey' }">d8:50:e6:72:a0:f0</td>
+                     <td class="col-ip ng-binding" data-fgw-table-cell="{ id:'ip', currentSortKey:'fgwLanDevices.currentSortKey' }">192.168.1.71</td>
+                     <td class="col-leaseTime ng-binding" data-fgw-table-cell="{ id:'leaseTime', currentSortKey:'fgwLanDevices.currentSortKey' }">0 segundos</td>
+                     <td class="col-ipv6 ng-binding" data-fgw-table-cell="{ id:'ipv6', currentSortKey:'fgwLanDevices.currentSortKey' }"> </td>
+                     <td class="col-linkLocalIpv6 ng-binding" data-fgw-table-cell="{ id:'linkLocalIpv6', currentSortKey:'fgwLanDevices.currentSortKey' }">fe80::da50:e6ff:fe72:a0f0</td>
+<!--                      <td class="fgw-table-actions">
+                        <a href="#" class="btn btn-link btn-link-in-table" data-ng-repeat="icon in device.actions">
+                           <i class="icon fgw-{{icon}}"></i>
+                        </a>
+                     </td> -->
+                  </tr><!-- end ngRepeat: device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize --><tr data-ng-repeat="device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize" class="ng-scope">
+                     <td class="col-hostName ng-binding" data-fgw-table-cell="{ id:'hostName', currentSortKey:'fgwLanDevices.currentSortKey' }">Ludovina</td>
+                     <td class="col-portName ng-binding" data-fgw-table-cell="{ id:'portName', currentSortKey:'fgwLanDevices.currentSortKey' }">LAN 2</td>
+                     <td class="col-status" data-fgw-table-cell="{ id:'status', currentSortKey:'fgwLanDevices.currentSortKey' }">
+                        <!-- <span data-ng-if="!device.status">---</span> -->
+                        <span>
+                           <!-- ngIf: !!device.status -->
+                           <!-- ngIf: !device.status --><span class="fgw-text-danger ng-scope" data-ng-if="!device.status"><i class="icon fgw-circle"></i><span data-translate="TEXT.COMMON.LABEL.OFF" class="ng-scope"> desligado</span></span><!-- end ngIf: !device.status -->
+                        </span>
+                     </td>
+<!--                      <td>{{ device.duplexMode | uxfwkNullHider }}</td>
+                     <td>{{ device.speed | uxfwkNullHider }}</td> -->
+                     <td class="col-mac ng-binding" data-fgw-table-cell="{ id:'mac', currentSortKey:'fgwLanDevices.currentSortKey' }">60:a4:4c:71:ec:17</td>
+                     <td class="col-ip ng-binding" data-fgw-table-cell="{ id:'ip', currentSortKey:'fgwLanDevices.currentSortKey' }">192.168.1.72</td>
+                     <td class="col-leaseTime ng-binding" data-fgw-table-cell="{ id:'leaseTime', currentSortKey:'fgwLanDevices.currentSortKey' }">0 segundos</td>
+                     <td class="col-ipv6 ng-binding" data-fgw-table-cell="{ id:'ipv6', currentSortKey:'fgwLanDevices.currentSortKey' }"> </td>
+                     <td class="col-linkLocalIpv6 ng-binding" data-fgw-table-cell="{ id:'linkLocalIpv6', currentSortKey:'fgwLanDevices.currentSortKey' }">fe80::da50:e6ff:fe72:a0f0</td>
+<!--                      <td class="fgw-table-actions">
+                        <a href="#" class="btn btn-link btn-link-in-table" data-ng-repeat="icon in device.actions">
+                           <i class="icon fgw-{{icon}}"></i>
+                        </a>
+                     </td> -->
+                  </tr><!-- end ngRepeat: device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize --><tr data-ng-repeat="device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize" class="ng-scope">
+                     <td class="col-hostName ng-binding" data-fgw-table-cell="{ id:'hostName', currentSortKey:'fgwLanDevices.currentSortKey' }">ADAS</td>
+                     <td class="col-portName ng-binding" data-fgw-table-cell="{ id:'portName', currentSortKey:'fgwLanDevices.currentSortKey' }">LAN 2</td>
+                     <td class="col-status" data-fgw-table-cell="{ id:'status', currentSortKey:'fgwLanDevices.currentSortKey' }">
+                        <!-- <span data-ng-if="!device.status">---</span> -->
+                        <span>
+                           <!-- ngIf: !!device.status -->
+                           <!-- ngIf: !device.status --><span class="fgw-text-danger ng-scope" data-ng-if="!device.status"><i class="icon fgw-circle"></i><span data-translate="TEXT.COMMON.LABEL.OFF" class="ng-scope"> desligado</span></span><!-- end ngIf: !device.status -->
+                        </span>
+                     </td>
+<!--                      <td>{{ device.duplexMode | uxfwkNullHider }}</td>
+                     <td>{{ device.speed | uxfwkNullHider }}</td> -->
+                     <td class="col-mac ng-binding" data-fgw-table-cell="{ id:'mac', currentSortKey:'fgwLanDevices.currentSortKey' }">60:a4:4c:e8:fa:f3</td>
+                     <td class="col-ip ng-binding" data-fgw-table-cell="{ id:'ip', currentSortKey:'fgwLanDevices.currentSortKey' }">192.168.1.73</td>
+                     <td class="col-leaseTime ng-binding" data-fgw-table-cell="{ id:'leaseTime', currentSortKey:'fgwLanDevices.currentSortKey' }">0 segundos</td>
+                     <td class="col-ipv6 ng-binding" data-fgw-table-cell="{ id:'ipv6', currentSortKey:'fgwLanDevices.currentSortKey' }"> </td>
+                     <td class="col-linkLocalIpv6 ng-binding" data-fgw-table-cell="{ id:'linkLocalIpv6', currentSortKey:'fgwLanDevices.currentSortKey' }">fe80::da50:e6ff:fe72:a0f0</td>
+<!--                      <td class="fgw-table-actions">
+                        <a href="#" class="btn btn-link btn-link-in-table" data-ng-repeat="icon in device.actions">
+                           <i class="icon fgw-{{icon}}"></i>
+                        </a>
+                     </td> -->
+                  </tr><!-- end ngRepeat: device in fgwLanDevices.filteredData | startFrom:fgwLanDevices.currentPage * fgwLanDevices.pageSize | limitTo:fgwLanDevices.pageSize -->
+               </tbody>
+            </table>
+            </div>
+                <!-- PAGINATION -->
+    <div class="fgw-pagination">
+        <div class="clearfix">
+            <div class="fgw-pagination-length">
+                <div class="select2-container form-control ng-pristine ng-untouched ng-valid ng-not-empty" id="s2id_autogen3"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-4">50</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen4" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-4" id="s2id_autogen4" type="text"><div class="select2-drop select2-display-none">   <div class="select2-search select2-search-hidden select2-offscreen">       <label for="s2id_autogen4_search" class="select2-offscreen"></label>       <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-4" id="s2id_autogen4_search" placeholder="" type="text">   </div>   <ul class="select2-results" role="listbox" id="select2-results-4">   </ul></div></div><select class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" data-ui-select2="{ minimumResultsForSearch: -1 }" data-ng-model="fgwLanDevices.pageSize" tabindex="-1" title="" style="display: none;">
+                    <option value=""></option>
+                    <!-- ngRepeat: option in [5,10,15,25,50] --><option ng-repeat="option in [5,10,15,25,50]" class="ng-binding ng-scope" value="5">5</option><!-- end ngRepeat: option in [5,10,15,25,50] --><option ng-repeat="option in [5,10,15,25,50]" class="ng-binding ng-scope" value="10">10</option><!-- end ngRepeat: option in [5,10,15,25,50] --><option ng-repeat="option in [5,10,15,25,50]" class="ng-binding ng-scope" value="15">15</option><!-- end ngRepeat: option in [5,10,15,25,50] --><option ng-repeat="option in [5,10,15,25,50]" class="ng-binding ng-scope" value="25">25</option><!-- end ngRepeat: option in [5,10,15,25,50] --><option ng-repeat="option in [5,10,15,25,50]" class="ng-binding ng-scope" value="50" selected="selected">50</option><!-- end ngRepeat: option in [5,10,15,25,50] -->
+                </select>
+                <span data-translate="TEXT.COMMON.TABLE.ITEMSPERPAGE" class="ng-scope">entradas por página</span>
+            </div>
+            <div class="fgw-pagination-info">
+                <span data-translate="TEXT.COMMON.TABLE.TOTALENTRIES" class="ng-scope">Entradas totais</span>
+                <strong class="ng-binding">5</strong>
+            </div>
+        </div>
+        <div class="fgw-pagination-nav">
+            <button class="btn btn-xs btn-default" href="" title="início" ng-disabled="fgwLanDevices.currentPage == 0" ng-click="fgwLanDevices.currentPage=0" disabled="disabled">
+                <i class="icon fgw-step-backward"></i>
+            </button>
+            <button class="btn btn-xs btn-default" href="" title="retroceder" ng-disabled="fgwLanDevices.currentPage == 0" ng-click="fgwLanDevices.currentPage=fgwLanDevices.currentPage-1" disabled="disabled">
+                <i class="icon fgw-backward"></i>
+            </button>
+            <input class="form-control" value="1">
+            <span data-translate="TEXT.COMMON.TABLE.OF" class="ng-scope">de</span>
+            <span class="ng-binding">1</span>
+            <button class="btn btn-xs btn-default" href="" title="avançar" ng-disabled="fgwLanDevices.currentPage &gt;= fgwLanDevices.filteredData.length/fgwLanDevices.pageSize - 1" ng-click="fgwLanDevices.currentPage=fgwLanDevices.currentPage+1" disabled="disabled">
+                <i class="icon fgw-forward"></i>
+            </button>
+            <button class="btn btn-xs btn-default" href="" title="fim" ng-disabled="fgwLanDevices.currentPage &gt;= fgwLanDevices.filteredData.length/fgwLanDevices.pageSize - 1" ng-click="fgwLanDevices.currentPage=fgwLanDevices.numberOfPages(fgwLanDevices.filteredData.length)-1" disabled="disabled">
+                <i class="icon fgw-step-forward"></i>
+            </button>
+        </div>
+    </div>
+      </div>
+   </div><!-- end ngIf: fgwLanDevices.dependenciesResolved -->
+<div class="uxfwk-table-load-panel ng-scope"><div class="icon"></div><div class="alert ng-isolate-scope" data-uib-alert="" type="danger" role="alert"><button ng-show="closeable" type="button" class="close ng-hide" ng-click="close({$event: $event})">
+  <span aria-hidden="true">×</span>
+  <span class="sr-only">Close</span>
+</button>
+<div ng-transclude=""><span class="ng-scope">Oops! Resource retrieval failed or context not valid!</span></div>
+</div></div></div></div></div></div>
+      </div>
+
+      <!--div class="fx-push-footer fx-full-height">
+         <div id="fx-header">
+		      <div data-ng-include="'widgets/header/header.tpl.html'"></div>
+         </div>
+         <div class="fx-prevent-content-behind-footer fx-full-height">
+            <div id="splitter-parent" class="fx-splitter-area">
+               <div id="fx-sidebar" class="fx-splitter-sidebar">
+                  <div id="left-navbar">
+                  	<ul cclass="fx-nav">
+                  		<li><a id="router" data-ui-sref="gui.router"><i class="{{::item.icon}}"></i><span>Router</span></a></li>
+                  		<li><a id="lan" data-ui-sref="gui.lan.home"><i class="{{::item.icon}}"></i><span>LAN</span></a></li>
+                  		<li><a id="wan" data-ui-sref="gui.wan.home"><i class="{{::item.icon}}"></i><span>WAN</span></a></li>
+                  		<li><a id="wifi" data-ui-sref="gui.wifi.home"><i class="{{::item.icon}}"></i><span>Wi-Fi</span></a></li>
+                  		<li><a id="voice" data-ui-sref="gui.voice"><i class="{{::item.icon}}"></i><span>Voice</span></a></li>
+                  		<li><a id="tv" data-ui-sref="gui.tv"><i class="{{::item.icon}}"></i><span>Television</span></a></li>
+                  	</ul>
+                  </div>
+                  <div id="fx-splitter-bar" class="fx-splitter-bar" data-toggle="splitter" data-splitter-position="left" data-splitter-parent="#splitter-parent" data-splitter-sidebar="#fx-sidebar" data-splitter-content="#fx-splitter-content"></div>
+               </div>
+               <div id="fx-splitter-content" class="fx-splitter-content" style="left:258px">
+                  <div id="main-view" data-ui-view="body-view" data-uxfwk-load-panel="'static'"></div>
+               </div>
+            </div>
+         </div>
+      </div-->
+
+    <!--FOOTER-->
+    <!-- ngInclude: --><div data-ng-include="" src="'widgets/footer/footer.html'" data-ng-init="footerContentVisible=true" ddata-ng-controller="Footer" class="ng-scope"><footer class="fgw-footer clearfix ng-scope">
+    <!-- ngIf: !!footerContentVisible --><div data-ng-if="!!footerContentVisible" class="fgw-footer-copyright ng-scope" data-translate="TEXT.FOOTER.COPYRIGHT">© 2017 Altice Labs, SA - Todos os direitos reservados</div><!-- end ngIf: !!footerContentVisible -->
+
+    <!-- ngIf: !!footerContentVisible --><ul data-ng-if="!!footerContentVisible" class="fgw-footer-links list-unstyled ng-scope">
+        <!--li><a href="#" class="">Ask for help</a></li-->
+        <li><a data-ng-click="openModal()" data-translate="TEXT.FOOTER.ABOUT" class="ng-scope">Acerca de</a></li>
+    </ul><!-- end ngIf: !!footerContentVisible -->
+</footer>
+
+<script type="text/ng-template" id="FooterModal.html" class="ng-scope">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-ng-click="$close()"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="about-modal-label" data-translate="TEXT.FOOTER.ABOUT"></h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <img src="external/styles/img/logo.png" alt="">
+                    <span class="sr-only">FGW</span>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close" data-ng-click="$close()" data-translate="TEXT.BUTTON.CLOSE"></button>
+            </div>
+        </div><!-- /.modal-content -->
+</script></div>
+    
+    <!--     Notifications -->
+     <div id="alertContainer" class="fx-alert-container">
+         <!-- ngRepeat: notification in notifications.alerts.list -->
+      </div>
+    
+
+	
+
+<span role="status" aria-live="polite" class="select2-hidden-accessible"></span></body></html>

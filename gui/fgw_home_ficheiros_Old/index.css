@@ -1,0 +1,772 @@
+/* style do disable square box around links with focus */
+a, a:hover, a:focus { outline: 0; }
+
+/* since href must be empty in angular, cursor must be forced by CSS */
+.nav, .pagination, .carousel, .panel-title a, a { cursor: pointer; }
+
+/* the following rules may be applied on DOM elements where animation transitions are required (there should exists a class for each attribute with transition) */
+/*
+.uxfwk-css-transition-ease-visibility  { -webkit-transition: height 0.35s ease;      -moz-transition: height 0.35s ease;      -o-transition: height 0.35s ease;      transition: height 0.35s ease; }
+.uxfwk-css-transition-ease-height      { -webkit-transition: height 0.35s ease;      -moz-transition: height 0.35s ease;      -o-transition: height 0.35s ease;      transition: height 0.35s ease; }
+.uxfwk-css-transition-ease-padding-top { -webkit-transition: padding-top 0.35s ease; -moz-transition: padding-top 0.35s ease; -o-transition: padding-top 0.35s ease; transition: padding-top 0.35s ease; }
+*/
+/* used on divs that only exist as content wrappers */
+/*
+div.content-wrapper, div.uxfwk-content-wrapper {
+   position: relative;
+   height: 100%; width: 100%;
+}
+.invisible { display: none; }
+
+ol.breadcrumb {
+   height: 26px;
+   border: 0px;
+}
+.uxfwk-content-wrapper.breadcrumb {
+   padding: 0px; padding-right: 200px;
+}
+.uxfwk-ui-clock {
+   position: absolute; top: 0px; right: 0px;
+   height: 100%; width: 200px;
+}
+#main-view {
+   position: relative;
+   height: 100%;
+}
+#top-view {
+   position: absolute; z-index: 2;
+   height: 82px; width: 100%;
+}
+#body-view {
+   position: relative; z-index: 1;
+   height: 100%;
+   padding-top: 82px;
+}
+#tab2-view {
+   position: absolute; z-index: 1;
+   height: 46px; width: 100%;
+}
+#body2-view {
+   height: 100%;
+   padding-top: 46px;
+}
+#alertContainer { visibility: hidden; }
+.ng-scope #alertContainer { visibility: inherit; }
+
+
+.uxfwk-wrapped-view {
+   height: 100%; overflow: hidden;
+}
+.uxfwk-wrapped-view > div {
+   height: 100%; overflow: auto;
+   padding: 10px;
+}
+*/
+
+
+/* Fix ui-select z-index - did not work when select inside a modal */
+body > .ui-select-bootstrap.open { z-index: 1051; }
+/* Fix right content area
+ - without height:100%, content area do not fill all height
+ - padding-left is used to fix a 1px slide issue (cuts one pixel of left side of content area)
+*/
+#fx-splitter-content { height: 100%; padding-left: 1px; }
+/* Fix header height
+ - althought header uses up to 70px, content area has a padding-top of 68px, so 2px would be cut off right at top content
+*/
+.fx-prevent-content-behind-footer { padding-top: 70px; }
+
+/* NRF - to disable equipment combo falling bellow equipment name when both do not fit in 500px wide div */
+.fx-entity-header-headings > .pull-left { height: 41px; overflow: hidden; }
+
+.uxfwk-tab-pane-inner {
+   height: 100%; overflow: hidden;
+   border-top: 1px solid #DDDDDD;
+}
+.uxfwk-tab-pane-inner > div {
+   height: 100%; overflow: auto;
+   padding: 10px 10px 10px 10px;
+}
+
+nav.uxfwk-nav-2ndtab {
+   position: absolute;
+   display: block; height: 37px; width: 100%;
+   padding-bottom: 7px;
+   background-color: rgb(247,247,247);
+}
+nav.uxfwk-nav-2ndtab > ul.nav.nav-tabs.fx-tab-pills {
+   display: inline-block;
+   margin: 0px; margin-left: 10px;
+}
+nav.uxfwk-nav-2ndtab > ul.nav.nav-tabs.fx-tab-pills > li > a {
+   position: relative; z-index: 1000;
+   padding-top: 8px; padding-bottom: 8px;
+}
+nav.uxfwk-nav-2ndtab > .fx-tab-pills.nav-tabs li.active a:after {
+   display: none;
+}
+.body-bottom-view {
+   height: 100%;
+   /*padding-top: 37px;*/
+}
+.body-bottom-view .uxfwk-form-actions {
+   position: absolute; top: -30px;
+   background: none;
+}
+.body-bottom-view .uxfwk-form-content {
+   padding-top: 0px;
+}
+
+
+
+#splitter-parent.leftNavBar {
+   margin-left: 45px;
+}
+
+
+/*FOOTER ABOUT*/
+#sobre > .modal-dialog > .modal-content > .modal-body > .tab-content{
+   margin-top:100px;
+}
+
+.tab-pane.active > div {
+   height: 100%; overflow: auto;
+   background-color: #FFFFFF;
+}
+
+.fx-form-content.fx-expandable-form-blocks {
+   -overflow: auto;
+}
+
+#fx-boards-list>li>.fx-is-ok {
+   background: #4b7f25;
+}
+
+footer .fx-copyright {
+   position: relative;
+   vertical-align: middle;
+}
+footer .uxfwk-copyright-text {
+   float: right;
+   padding-top: 3px;
+}
+
+
+.uxfwk-table-load-panel {
+   position: absolute !important; top: 0px; left: 0px; z-index: 1000;
+   display: none; height: 100%; width: 100%;
+   background-color: #FFFFFF;
+}
+.uxfwk-table-load-panel.inprogress {
+   opacity: 0.5;
+   display: block;
+}
+.uxfwk-table-load-panel .icon {
+   position: relative; top: 45%;
+   display: block; height: 31px; width: 31px;
+   margin: auto auto;
+   background: url("internal/uxfwk/css/images/loaderSpinning.gif") no-repeat scroll 0 0;
+}
+.uxfwk-table-load-panel .alert {
+   position: relative; top: 45%;
+   display: none;
+}
+.uxfwk-table-load-panel.error {
+   opacity: 1.0;
+   display: block;
+}
+.uxfwk-table-load-panel.error .icon {
+   display: none;
+}
+.uxfwk-table-load-panel.error .alert {
+   display: block;
+}
+/*
+.jstree-anchor.olt > .jstree-checkbox {
+   display: none;
+}*/
+
+/*SIDEBAR WITH TABS*/
+.fx-sidebar-header{
+   width: 100%;
+   height:50px;
+   top: 0;
+   z-index: 2;
+}
+
+.fx-splitter-sidebar-content > .fx-sidebar-content-wrapper {
+   height: 100%;
+   padding: 0px;
+   overflow: hidden;
+}
+.uxfwk-sidebar-container{
+   height: 100%;
+   padding-top: 50px;
+   overflow: hidden;
+}
+.uxfwk-sidebar-container > #eqp-more-info-wrapper{
+   height: 100%;
+   overflow: auto;
+   padding: 10px;
+}
+.fx-sidebar-header-inner{
+   padding: 10px;
+   padding-top: 0px;  
+}
+#nav-tree-wrapper{
+   height: 100%;
+   overflow: hidden;
+}
+
+.caret-btn-container{
+   padding:0px;
+   background: none;
+   border:none;
+   height:auto;
+}
+.caret-btn-container:focus{
+   outline:0;
+}
+
+/*POPOVER STYLES*/
+.popover{
+   font-size: 12px;
+   min-width: 500px;
+}
+.popover-content{
+   padding:0;
+}
+.caret-btn-container{
+   color: #666;
+}
+
+/*TEXT TRANSFORMATIONS*/
+.text-lowercase{
+   text-transform: lowercase;
+}
+.btn {
+   text-transform: none;
+}
+
+.error-message { display: none; color: red; }
+.has-error .error-message { display: block; }
+
+.table-control.has-error .error-message { display: block; }
+
+.fx-entity-header > .fx-entity-header-inner {
+   padding-left: 10px;
+}
+.fx-entity-header {
+   padding-top: 10px;
+}
+
+/**************************************/
+/*********   MODAL WINDOWS   **********/
+/**************************************/
+
+/* BOOTSTRAP-UI MODAL */
+
+/* ATENTION: while the ui-bootstrap version is not upgraded to a higher version, the modal-lg sized is defined here.
+             Current version of ui-bootstrap at moment of the comment: v3.0.0 */
+.modal-dialog.modal-lg {
+    -width: 900px;
+}
+
+/* Remove default border */
+.modal-content {
+    border: none;
+}
+.uxfwkicons-spinning,
+.uxfwk-spinning {
+   width: 16px;
+   height: 16px;
+   /*margin-top: 6px;*/
+   display: inline-block;
+   background: url('internal/uxfwk/css/images/loaderSpinning.gif') no-repeat 100%;
+}
+
+.fuxicons.fuxicons-error.uxfwk-error{
+   color: red;
+}
+
+/**************************************/
+/************   SELECT 2   ************/
+/**************************************/
+.select2-container .select2-choice {
+   height: 28px;
+}
+.select2-choice {
+      font-size: 12px;
+      line-height: 1.5;
+}
+.select2-choice span.select2-chosen{
+   color: #666666;
+}
+
+.select2-choice.select2-default span.select2-chosen{
+   color: #999999;
+}
+
+/**
+ * Simple solution for text cutted inside combo options (simply allows word to be
+ * broken if width is not enough). Not pretty, but not blocker. Also, maximizes
+ * 
+ */
+.select2-drop .select2-result-label {
+   word-wrap: break-word;
+}
+ul.select2-results {
+   max-width: 500px;
+}
+
+/**
+ * Select-2 - Multiple select *
+ * This rule is to assure that the above rule: ul.select2-results { max-width: 500px }
+ * does not affect multiple select comboboxs. There was an issue with the scroll bar that was not in the right place of the container
+ * because of the refered max-width. This solution allows the scroll to be rightfully positioned
+ */
+div.select2-drop.select2-drop-multi > ul.select2-results { max-width: none; }
+
+
+/* ALL GLOBAL COLORS GOES HERE */
+.uxfwk-wrapped-view { border-top: 1px solid #DDDDDD; }
+
+
+
+.radio label {
+   line-height: 1.7;
+}
+
+.btn-save-container {
+   display: inline-block;
+}
+
+.fx-entity-header .select2-container {
+    min-width: 200px;
+}
+
+
+/**************************************/
+/*********   FORM APP STYLES   ********/
+/**************************************/
+/* Custom style for configuration pages
+   styles the area buttons */
+
+.uxfwk-form, .uxfwk-tab-wrapper {
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+
+.uxfwk-form .fx-form-block input[type="checkbox"] {
+   margin-top: 7px;
+}
+
+.uxfwk-form-actions, .uxfwk-tab-actions {
+   position: absolute;
+   width: 100%;
+   background: #f7f7f7;
+   padding: 0px 0px 6px 0px;
+   height: 30px;
+}
+
+.uxfwk-form-actions.expanded-actions {   /* Cases where a form does not exist(like a table), the border should have a 100% width */
+   border-bottom: 1px solid #ddd;
+}
+
+.uxfwk-tab-actions {
+   border-bottom: 1px solid #ddd;
+   padding: 0px 20px 6px 20px;
+}
+
+.uxfwk-form-actions .left-actions {
+   float: left;
+   width: 204px;
+   padding: 0px 12px 0px 12px;
+}
+.uxfwk-form-actions .right-actions {
+   width: 100%;
+   position: absolute;
+   left: 0;
+   height: 100%;
+}
+
+.uxfwk-form-actions .right-actions .right-actions-container {
+   width: 100%;
+   display: inline-block;
+   padding-left: 204px;
+   height: 100%;
+}
+
+.uxfwk-form-actions .right-actions .right-actions-container .inner {
+   width: 100%;
+   display: inline-block;
+   border-bottom: 1px solid #ddd;
+   padding-bottom: 5px;
+   height: 100%;
+}
+
+.uxfwk-form-actions.expanded-actions .right-actions .right-actions-container .inner {
+   border-bottom: none;
+}
+.uxfwk-form-actions .right-actions .right-actions-container .inner .action-buttons {
+   padding: 0px 12px 0px 12px;
+}
+
+.uxfwk-form-actions p {
+   margin: 5px 0;
+}
+
+.uxfwk-form-actions button, .uxfwk-tab-wrapper .uxfwk-tab-actions button {
+   margin-right: 5px;
+}
+
+/*
+.uxfwk-form-actions button span, .uxfwk-tab-wrapper .uxfwk-tab-actions button span {
+   padding-left: 7px;
+   padding-right: 7px;
+}
+*/
+
+.uxfwk-form-content {
+   height: 100%;
+   width: 100%;
+   padding-top: 30px;
+}
+
+/* Remove border top from the first form element */
+.uxfwk-form-content div.fx-form-block > div.fx-form-block-controls.fx-first {
+   border-top: none !important;
+}
+
+.uxfwk-form-content > div {
+   height: 100%;
+   overflow: none;
+   position: relative;
+}
+
+/* Use to extend the top border to 100% width when the first form block is collapsed */
+.uxfwk-form.fx-first-is-collapsed .right-actions-container { padding-left: 0px; }
+
+/**************************************/
+/*********      APP STYLES     ********/
+/**************************************/
+/*Overides fuxi default padding*/
+.tab-content.fx-main-tab-content .tab-pane {
+   padding-top: 5px;
+}
+
+
+
+/**************************************/
+/*********    VIEWS STYLES     ********/
+/**************************************/
+/*left-navbar*/
+#left-navbar { height: 100%; }
+
+
+/**************************************/
+/*********    QUICKVIEW        ********/
+/**************************************/
+.uxfwk-quickview
+{
+   border: none; padding: 0px;
+   background-color: transparent;
+}
+.uxfwk-popup-quickview
+{
+   z-index: 1051;
+   min-width: auto;
+   display: block;
+}
+
+.inedition .uxfwk-core-interface-operational-state, .inedition .uxfwk-gpon-onu-operational-state
+{
+   padding: 3px 0px 3px 3px;
+}
+.uxfwk-core-interface-operational-state, .uxfwk-gpon-onu-operational-state {
+   height: 100%;
+}
+.uxfwk-core-interface-operational-state > div > i, .uxfwk-gpon-onu-operational-state > div > i
+{
+   margin-right: 5px;
+}
+.uxfwk-core-interface-operational-state-popup, .uxfwk-gpon-onu-operational-state-state-popup
+{
+   padding: 5px;
+}
+.uxfwk-core-interface-operational-state-popup > div > i, .uxfwk-gpon-onu-operational-state-state-popup > div > i
+{
+   margin-right: 5px;
+}
+
+/*Correction to display the table with 100% width on details pages*/
+.uxfwk-table-width-correction{
+   table-layout: fixed;
+}
+.uxfwk-table-width-correction-inside{
+   width: 100%;
+   position:relative;
+}
+
+.form-control.ng-invalid, .ng-invalid.form-control:focus { border-color: #E43434 !important; }
+.form-control.ng-invalid, .ng-invalid.form-control:focus { box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(228, 52, 52, 0.6); }
+
+
+.uxfwk-form .fx-form-block .uxfwk-table-width-correction-inside input[type="checkbox"] {
+    margin-top: 0px;
+ }
+
+.ng-scope .select2-choices{ border: 1px solid #ccc;}
+
+.uxfwk-tab-actions .select2-container.input-xs
+{
+   margin-right: 5px;
+}
+.uxfwk-tab-actions .select2-container.input-xs .select2-choice
+{
+	height: 23px;
+}
+.uxfwk-tab-actions .select2-container.input-xs .select2-choice .select2-chosen
+{
+	height: 21px;
+   line-height: 21px;
+}
+.uxfwk-tab-actions .select2-container.input-xs .select2-choice .select2-arrow
+{
+	top: -2px;
+}
+
+.uxfwk-ui-data-view-toolbar-internal {
+   margin-left: 5px;
+}
+
+.uxfwk-search-form-field {
+   display: inline-block;
+   margin-right: 10px;
+}
+.uxfwk-search-form-field > label {
+   margin-right: 5px;
+}
+
+/*CSS STYLE FOR FORMS WITH MULTIPLE INPUT COLUMNS*/
+.uxfwk-form-2-columns-column  { max-width: 148px; padding-left: 0px; }
+.uxfwk-form-3-columns-column  { max-width: 99px; padding-left: 0px; }
+
+
+/***************************************************/
+/*********                MISC              ********/
+/***************************************************/
+
+
+/*********             ELLIPSIS             ********/
+/***************************************************/
+.uxfwk-truncate {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+/* Ellipsis on the header title */
+.uxfwk-truncate-title-header {
+   width: 450px;
+   display: inline-block;
+   padding-top: 2px;
+   margin-left: 6px;
+}
+.uxfwk-truncate-title-peer {
+   width: 205px;
+   display: inline-block;
+   vertical-align: bottom;
+}
+
+
+.uxfwk-datepicker {
+   position: relative;
+   display: block; width: 100%; max-width: 150px;
+   padding-right: 39px;
+}
+.uxfwk-datepicker-wrapper { display: inline-block; }
+.uxfwk-datepicker > div {
+   display: inline-block; heigth: 100%; width:100%;
+}
+.uxfwk-datepicker input {
+   width: 100%; max-width: 100% !important;
+}
+.uxfwk-datepicker > span {
+   position: absolute; right: 0px;
+   display: inline-block; height: 100%; width: 39px;
+}
+.uxfwk-datepicker > span > button { height: 32px; }
+
+
+.uxfwk-timepicker {}
+.uxfwk-timepicker-wrapper { display: inline-block; }
+.uxfwk-timepicker tr.text-center a.btn { padding: 0px; }
+
+table.dataTable tr td.odd { background-color: white; }
+table.dataTable tr td.even { background-color: #f9f9f9; }
+
+.uxfwk-ui-button-refresh { display: inline-block; }
+.uxfwk-ui-button-refresh-icon { width: 26px; }
+.uxfwk-ui-button-refresh-caret > .btn-xs { height: 24px; padding: 1px 2px; }
+.uxfwk-ui-button-refresh-menu { width: 250px; margin-left: -228px; }
+.uxfwk-ui-button-refresh-menu > .fx-dropdown-body { padding: 0px 5px; }
+.uxfwk-ui-button-refresh-menu > .fx-dropdown-body li { padding-left: 5px; }
+.uxfwk-ui-button-refresh-menu > .fx-dropdown-body li input[type="radio"] {
+   position: relative; top: 2px;
+   margin-top: 4px; margin-right: 5px;
+}
+.uxfwk-ui-button-refresh-menu-entry-icon { padding: 0px; }
+.uxfwk-ui-button-refresh-menu-entry-text { margin-left: 5px; }
+
+
+/**
+ * Styles for select2 wrapper. This wrapper intents to fix the height (allowing the
+ * directive to be destroyed and constructed everytime the list of available choices
+ * changes). For that matter, when wrapper exists, the height and borders are defined
+ * on wrapper to allow a smoother transition between destructions and constructions.
+ */
+.uxfwk-ui-select2-wrapper {
+   height: 33px;
+   border: 1px solid #CCCCCC;
+}
+.uxfwk-ui-select2-wrapper .select2-choices {
+   border: 0px;
+}
+
+
+
+/**
+ some adaptations regarding loss of styles due to FUXI evolve version
+*/
+.btn-xs .fa, .btn-xs .fuxicons, .btn-xs .glyphicon { line-height: inherit !important; }
+.btn-xs { height: 24px; }/* some icons have different height... this rule tries to fix that... take the toggle as an example*/
+.btn-advanced-search.collapsed i { top: 1px !important; vertical-align: baseline !important; }
+.fx-form-search { margin-top: 0px !important; }
+.btn-advanced-search.btn-xs { height: 30px; }
+.btn.multiple > a.btn { margin-right: 0px; }
+.fx-search-input .form-group .form-control { width: 140px; }/* fixing at 180px is too much; it is not a so wide definition...*/
+.fx-nav.fx-main-menu li a { text-transform: uppercase; } /* TODO: remove when a new version is installed. Current: v1.12.1 - 2015-09-14 */
+.btn-xs.selected { background-color: #FFEFB1; }/* some icons have different height... this rule tries to fix that... take the toggle as an example*/
+
+
+
+/***
+ Main tab navigation fix
+ THIS MUST BE REMOVED UPON MAIN TAB COMPONENT UPGRADE
+***/
+.fx-scrollable-tabs-list-wrapper{
+   margin-left: 45px;
+   margin-right: 45px;
+}
+.fx-scrollable-tabs-list-wrapper ul.nav-tabs.fx-main-tabs {
+   padding: 0 0px;
+}
+
+
+/**
+ * Removes arrows on input[type=number] fields
+ */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+/* This one may be applied if one wants arrows to exists only on hover or focus
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+*/
+
+
+
+.fx-breadcrumb-addon {
+  float: right;
+  padding-right: 10px;
+  margin-top: -25px;
+}
+.fx-breadcrumb-addon .select2-container .select2-choice {
+    height: 24px; 
+}
+
+.fx-breadcrumb-addon.uxfwk-breadcrumb-clock {
+   margin-top: 1px;
+}
+.uxfwk-breadcrumb-clock-dropdown i,
+.uxfwk-breadcrumb-clock-select i {
+   margin-right: 5px;
+}
+.uxfwk-breadcrumb-clock-select { width: 170px; }
+.uxfwk-breadcrumb-clock-select > a
+{
+   border-color: transparent !important;
+}
+.uxfwk-breadcrumb-clock-select.select2-dropdown-open > a
+{
+   border-color: #3E8A96 !important;
+}
+.uxfwk-breadcrumb-clock-select:hover > a
+{
+   border-color: #CCCCCC !important;
+}
+.uxfwk-time-utils-ui-time-quickview {
+   padding: 10px;
+}
+.uxfwk-time-utils-ui-time-quickview i {
+   margin-right: 5px;
+}
+.uxfwk-time-utils-ui-time-quickview span {
+   padding: 3px 0px;
+}
+.uxfwk-time-utils-ui-time-quickview .active {
+   font-weight: bolder;
+}
+
+form .uxfwk-ui-quickview
+{
+   position: relative; top: 1px;
+   margin-left: -1px;
+}
+
+
+.uxfwk-dropup:before {
+   top: 100% !important;
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
+   transform: rotate(180deg);
+}
+.uxfwk-dropup:after {
+   top: 100% !important;
+   -webkit-transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   -o-transform: rotate(180deg);
+   transform: rotate(180deg);
+}
+
+button > i+span, .uxfwk-button > i+span { margin-left: 5px; }
+
+/*************************************************************************************/
+/*********************      FWG - PASSWORD SWITCH DIRECTIVE SYLES      ***************/
+/*************************************************************************************/
+.fgw-password-visibility-switch-switch button {
+   padding: 5px 12px;
+}
+
+.uxfwk-fgw-contents-home .fgw-password-visibility-switch-switch button{
+   margin-right: 37px;
+}
+
+.fgw-password-visibility-switch { display: table-row-group; }
+.fgw-password-visibility-switch div:nth-child(3){
+   display: table-row;
+}
+
+.fgw-password-visibility-switch-default { display: table-row; }
+
