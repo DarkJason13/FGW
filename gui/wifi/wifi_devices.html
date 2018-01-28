@@ -1181,12 +1181,12 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
         <!-- Collect the nav links, forms, and other content for toggling -->
         <!-- ngIf: !!headerContentVisible --><div data-ng-if="!!headerContentVisible" class="collapse navbar-collapse fgw-main-nav ng-scope" id="navbar-menu">
             <ul class="nav navbar-nav">                
-                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.home" href="#/gui/home"><span><i class="icon fgw-home"></i><span data-translate="TEXT.FGW.NAVIGATION.HOME" class="ng-scope">Início</span></span></a></li>
-                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.security" href="#/gui/security"><span><i class="icon fgw-shield"></i><span data-translate="TEXT.FGW.NAVIGATION.SECURITY" class="ng-scope">Segurança</span></span></a></li>
-                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.contents" href="#/gui/services"><span><i class="icon fgw-cogs"></i><span data-translate="TEXT.FGW.NAVIGATION.CONTENTS" class="ng-scope">Serviços</span></span></a></li>
-                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.tools" href="#/gui/tools"><span><i class="icon fgw-configuration"></i><span data-translate="TEXT.FGW.NAVIGATION.TOOLS" class="ng-scope">Ferramentas</span></span></a></li>
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.home" href="../home.html"><span><i class="icon fgw-home"></i><span data-translate="TEXT.FGW.NAVIGATION.HOME" class="ng-scope">Início</span></span></a></li>
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.security" href="/gui/security/security_home.html"><span><i class="icon fgw-shield"></i><span data-translate="TEXT.FGW.NAVIGATION.SECURITY" class="ng-scope">Segurança</span></span></a></li>
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.contents" href="/gui/services/services_home.html"><span><i class="icon fgw-cogs"></i><span data-translate="TEXT.FGW.NAVIGATION.CONTENTS" class="ng-scope">Serviços</span></span></a></li>
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.tools" href="/gui/tools/tools_home.html"><span><i class="icon fgw-configuration"></i><span data-translate="TEXT.FGW.NAVIGATION.TOOLS" class="ng-scope">Ferramentas</span></span></a></li>
                 <!-- <li data-ui-sref-active="active"><a data-ui-sref="gui.help"><span><i class="icon fgw-book"></i><span data-translate="TEXT.FGW.NAVIGATION.HELP"></span></span></a></li> -->
-                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.myaccount" href="#/gui/myaccount"><span><i class="icon fgw-user"></i><span data-translate="TEXT.FGW.NAVIGATION.MYACCOUNT" class="ng-scope">Minha conta</span></span></a></li>
+                <li data-ui-sref-active="active" class=""><a data-ui-sref="gui.myaccount" href="/gui/myaccount/myaccount_home.html"><span><i class="icon fgw-user"></i><span data-translate="TEXT.FGW.NAVIGATION.MYACCOUNT" class="ng-scope">Minha conta</span></span></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right fgw-language">
                 <li data-ng-class="{'active': language=='pt-PT'}" class="active">
@@ -1211,7 +1211,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
          <div class="fgw-summary-wrap" data-fgw-resize="summary" style="height: 631px;">
             <!--div ddata-ng-include src="'views/summary/default.html'" ddata-ng-controller="Summary"></div-->
             <div data-uxfwk-fgw-summary="" class="ng-isolate-scope"><div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
-   <a data-ui-sref="gui.router" href="#/gui/fgw">
+   <a data-ui-sref="gui.router" href="../fgw_home.html">
       <!-- Router -->
       <h4><i class="icon fgw-router"></i> <span data-translate="TEXT.COMMON.TITLE.ROUTER" class="ng-scope">FGW</span><span data-translate="TEXT.COMMON.SUBTITLE.ROUTER" class="ng-scope">Fiber Gateway</span></h4>
       <div class="form-horizontal">
@@ -1255,7 +1255,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
    </a>
 </div>
 <div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
-   <a data-ui-sref="gui.lan" href="#/gui/lan">
+   <a data-ui-sref="gui.lan" href="/gui/lan/lan_home.html">
       <h4><i class="icon fgw-lan"></i> <span data-translate="TEXT.COMMON.TITLE.LAN" class="ng-scope">LAN</span><span data-translate="TEXT.COMMON.SUBTITLE.LAN" class="ng-scope">Local Area Network</span></h4>
       <div class="form-horizontal">     
          <!-- Port status -->
@@ -1289,7 +1289,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
    </a>
 </div>
 <div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
-   <a data-ui-sref="gui.wan" href="#/gui/wan">
+   <a data-ui-sref="gui.wan" href="/gui/wan/wan_home.html">
       <h4><i class="icon fgw-provision"></i> <span data-translate="TEXT.COMMON.TITLE.WAN" class="ng-scope">WAN</span><span data-translate="TEXT.COMMON.SUBTITLE.WAN" class="ng-scope">Wide Area Network</span></h4>
       <div class="form-horizontal">     
          <!-- Port status -->
@@ -1332,7 +1332,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
    </a>
 </div>
 <div class="fgw-bs-row-container fgw-summary-block ng-scope active" data-ui-sref-active="active">
-   <a data-ui-sref="gui.wifi" href="#/gui/wifi">
+   <a data-ui-sref="gui.wifi" href="/gui/wifi/wifi_home.html">
       <h4><i class="icon fgw-wifi"></i> <span data-translate="TEXT.COMMON.TITLE.WIFI" class="ng-scope">Wi-Fi</span></h4>
       <div class="form-horizontal">     
          <!-- Wifi0 -->
@@ -1375,7 +1375,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
    </a>
 </div>
 <div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
-   <a data-ui-sref="gui.voice" href="#/gui/voice">
+   <a data-ui-sref="gui.voice" href="/gui/voz/voz_home.html">
       <h4><i class="icon fgw-rdis"></i> <span data-translate="TEXT.COMMON.TITLE.VOICE" class="ng-scope">Voz</span></h4>
       <div class="form-horizontal">     
          <!-- SIP register -->
@@ -1409,7 +1409,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
    </a>
 </div>
 <div class="fgw-bs-row-container fgw-summary-block ng-scope" data-ui-sref-active="active">
-   <a data-ui-sref="gui.tv" href="#/gui/tv">
+   <a data-ui-sref="gui.tv" href="/gui/tv/tv_home.html">
       <h4><i class="icon fgw-television"></i> <span data-translate="TEXT.COMMON.TITLE.TV" class="ng-scope">Televisão</span></h4>
       <div class="form-horizontal">     
          <!-- Service status -->
@@ -1441,7 +1441,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
    </a>
 </div></div>
          </div>
-         <!-- uiView: body-view --><div class="fgw-page-content-wrap ng-scope" data-ui-view="body-view"><div class="fgw-page-title clearfix ng-scope"><div class="pull-left"><h1><i class="icon fgw-wifi"></i><span data-translate="TEXT.COMMON.TITLE.WIFI" class="ng-scope">Wi-Fi</span></h1></div><!-- ngIf: false --></div><div class="fgw-page-content ng-scope" fgw-resize="content" style="min-height: 487px;"><nav class="fgw-main-tabs"><ul class="nav nav-tabs"><li data-ui-sref-active="active" class=""><a data-ui-sref="gui.wifi.home" data-translate="TEXT.COMMON.TABS.CHARACTERISTICS" class="ng-scope" href="#/gui/wifi/home">Características</a></li><li data-ui-sref-active="active" class=""><a data-ui-sref="gui.wifi.macfilter" data-translate="TEXT.COMMON.TABS.MACFILTER" class="ng-scope" href="#/gui/wifi/macfilter">Segurança</a></li><li data-ui-sref-active="active" class="active"><a data-ui-sref="gui.wifi.devices" data-translate="TEXT.COMMON.TABS.DEVICES" class="ng-scope" href="#/gui/wifi/devices">Dispositivos</a></li><li data-ui-sref-active="active"><a data-ui-sref="gui.wifi.statistics" data-translate="TEXT.COMMON.TABS.STATISTICS" class="ng-scope" href="#/gui/wifi/statistics">Estatísticas</a></li><li data-ui-sref-active="active"><a data-ui-sref="gui.wifi.neighbours24" data-translate="TEXT.COMMON.TABS.NEIGHBOURS24" class="ng-scope" href="#/gui/wifi/neighbours24">Vizinhos 2.4 GHz</a></li><!-- ngIf: $root.session2.is5GHzWifiSupported --><li data-ng-if="$root.session2.is5GHzWifiSupported" data-ui-sref-active="active" class="ng-scope"><a data-ui-sref="gui.wifi.neighbours5" data-translate="TEXT.COMMON.TABS.NEIGHBOURS5" class="ng-scope" href="#/gui/wifi/neighbours5">Vizinhos 5 GHz</a></li><!-- end ngIf: $root.session2.is5GHzWifiSupported --></ul></nav><!-- uiView: body-bottom-view --><div class="body-bottom-view ng-scope" data-ui-view="body-bottom-view"><div class="uxfwk-fgw-wifi-devices ng-scope ng-isolate-scope" data-uxfwk-load-panel="fgwWifiDevices.loadInProgress" data-uxfwk-load-panel-error="fgwWifiDevices.criticalError">
+         <!-- uiView: body-view --><div class="fgw-page-content-wrap ng-scope" data-ui-view="body-view"><div class="fgw-page-title clearfix ng-scope"><div class="pull-left"><h1><i class="icon fgw-wifi"></i><span data-translate="TEXT.COMMON.TITLE.WIFI" class="ng-scope">Wi-Fi</span></h1></div><!-- ngIf: false --></div><div class="fgw-page-content ng-scope" fgw-resize="content" style="min-height: 487px;"><nav class="fgw-main-tabs"><ul class="nav nav-tabs"><li data-ui-sref-active="active" class=""><a data-ui-sref="gui.wifi.home" data-translate="TEXT.COMMON.TABS.CHARACTERISTICS" class="ng-scope" href="/gui/wifi/wifi_home.html">Características</a></li><li data-ui-sref-active="active" class=""><a data-ui-sref="gui.wifi.macfilter" data-translate="TEXT.COMMON.TABS.MACFILTER" class="ng-scope" href="/gui/wifi/wifi_macfilter.html">Segurança</a></li><li data-ui-sref-active="active" class="active"><a data-ui-sref="gui.wifi.devices" data-translate="TEXT.COMMON.TABS.DEVICES" class="ng-scope" href="/gui/wifi/wifi_devices.html">Dispositivos</a></li><li data-ui-sref-active="active"><a data-ui-sref="gui.wifi.statistics" data-translate="TEXT.COMMON.TABS.STATISTICS" class="ng-scope" href="/gui/wifi/wifi_statistics.html">Estatísticas</a></li><li data-ui-sref-active="active"><a data-ui-sref="gui.wifi.neighbours24" data-translate="TEXT.COMMON.TABS.NEIGHBOURS24" class="ng-scope" href="/gui/wifi/wifi_neighbours24.html">Vizinhos 2.4 GHz</a></li><!-- ngIf: $root.session2.is5GHzWifiSupported --><li data-ng-if="$root.session2.is5GHzWifiSupported" data-ui-sref-active="active" class="ng-scope"><a data-ui-sref="gui.wifi.neighbours5" data-translate="TEXT.COMMON.TABS.NEIGHBOURS5" class="ng-scope" href="/gui/wifi/wifi_neighbours5.html">Vizinhos 5 GHz</a></li><!-- end ngIf: $root.session2.is5GHzWifiSupported --></ul></nav><!-- uiView: body-bottom-view --><div class="body-bottom-view ng-scope" data-ui-view="body-bottom-view"><div class="uxfwk-fgw-wifi-devices ng-scope ng-isolate-scope" data-uxfwk-load-panel="fgwWifiDevices.loadInProgress" data-uxfwk-load-panel-error="fgwWifiDevices.criticalError">
    <!-- ngIf: fgwWifiDevices.dependenciesResolved --><div data-ng-if="fgwWifiDevices.dependenciesResolved" class="ng-scope">
       <div class="uxfwk-fgw-wifi-devices-table">
             <!--This DIV shall be used for advanced filter form -->
